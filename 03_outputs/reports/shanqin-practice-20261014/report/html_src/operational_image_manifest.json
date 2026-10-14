@@ -1,0 +1,122 @@
+[
+  {
+    "id": "UI-01",
+    "file": "ui-01.png",
+    "crop": [
+      0,
+      0,
+      1512,
+      480
+    ],
+    "title": "合同录入结果：业务系统台账",
+    "anchor": "body-03-1",
+    "caption": "图1 合同 HT-2026-0007 已出现在业务台账",
+    "source": "业务演示系统 /demo30/contracts；2026年10月15日补采。",
+    "observation": "可见合同编号、秦川城建集团、85万元、到期日2026-09-10及录入日期2026-10-10。",
+    "limit": "这是补采时的台账状态。截图本身不展示写入过程；“本人全程观察AI录入、未点击补充协议”的说明仍依据本人更正U3。",
+    "evidence": "E04、E05、U3",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-01.png",
+    "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
+    "pixels": [
+      1512,
+      480
+    ],
+    "mime": "image/png",
+    "representation": "Lossless PNG excerpt of the decoded source JPEG at source_crop; pixels verified equal; no redraw, retouch, annotation, or compositing. Full source stays local and is not embedded.",
+    "report_view": "assets/published/ui-01.png",
+    "source_file": "contract-ledger-20261015.jpg",
+    "source_sha256": "8b2ddac25a37746386f5db188a7c2052a63a85ff0830fcbe1fd8ae10fd2e677c",
+    "source_pixels": [
+      1512,
+      728
+    ],
+    "source_crop": [
+      0,
+      0,
+      1512,
+      480
+    ]
+  },
+  {
+    "id": "UI-02",
+    "file": "ui-02.png",
+    "crop": [
+      0,
+      0,
+      1900,
+      970
+    ],
+    "title": "群简报：信息已进入钉钉会话",
+    "anchor": "body-04-1",
+    "caption": "图2 钉钉保留的10月10日项目简报（节选）",
+    "source": "本机DingTalk，“陕秦·项目协同群”；2026年10月15日补采。",
+    "observation": "可见“今日新增”“风险提醒”“已处理”等内容，补充协议在这条简报中仍标为“台账录入待确认”。",
+    "limit": "这是当前客户端中的历史消息，不能单凭它确定最初版本或后续办结状态。群为单人演示；消息中的“自动提示”也不等于提醒送达已获验证。",
+    "evidence": "E07、E08、E11",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-02.png",
+    "sha256": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
+    "pixels": [
+      1900,
+      970
+    ],
+    "mime": "image/png",
+    "representation": "Lossless PNG excerpt of the decoded source JPEG at source_crop; pixels verified equal; no redraw, retouch, annotation, or compositing. Full source stays local and is not embedded.",
+    "report_view": "assets/published/ui-02.png",
+    "source_file": "dingtalk-brief-20261015.jpg",
+    "source_sha256": "a78bcbb6fe7d3f1a6c5947b585805b9517b12cf2399e9967693d1de426018fee",
+    "source_pixels": [
+      3024,
+      1898
+    ],
+    "source_crop": [
+      1068,
+      112,
+      1900,
+      970
+    ]
+  },
+  {
+    "id": "UI-03",
+    "file": "ui-03.png",
+    "crop": [
+      0,
+      0,
+      2448,
+      760
+    ],
+    "title": "钉钉待办：从消息形成跟进事项",
+    "anchor": "body-05-1",
+    "caption": "图3 已创建的待拍板与纠偏方案跟踪待办",
+    "source": "本机DingTalk，To-Dos列表；2026年10月15日补采。",
+    "observation": "可见两项实践待办、执行人和期限。界面显示待拍板为Sunday 9:00 AM，纠偏跟踪为Saturday 6:00 PM；两项仍提供“Complete”按钮。",
+    "limit": "截图补强待办存在的证据，未证明提醒触达、负责人接单或业务办结。相对日期需结合采集日与原始记录解读，不视为新的执行效果测试。",
+    "evidence": "E07、E08",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-03.png",
+    "sha256": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf",
+    "pixels": [
+      2448,
+      760
+    ],
+    "mime": "image/png",
+    "representation": "Lossless PNG excerpt of the decoded source JPEG at source_crop; pixels verified equal; no redraw, retouch, annotation, or compositing. Full source stays local and is not embedded.",
+    "report_view": "assets/published/ui-03.png",
+    "source_file": "dingtalk-todos-20261015.jpg",
+    "source_sha256": "ccecb92328f9c5d66c0155abaf5c2e5978974442d2138854af10325e5bd2f076",
+    "source_pixels": [
+      3024,
+      1898
+    ],
+    "source_crop": [
+      545,
+      120,
+      2448,
+      760
+    ]
+  }
+]

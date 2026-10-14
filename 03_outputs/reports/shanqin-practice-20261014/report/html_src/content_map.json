@@ -1,0 +1,388 @@
+{
+  "report_source": "04_final_report.md",
+  "report_sha256": "72e5960c8203fa6a69f9a75c76e289f2ea612dad85aa186418cc4778b2823bde",
+  "matrix_source": "02_evidence_matrix.md",
+  "matrix_sha256": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
+  "theme": "hk-technology",
+  "default_view": "report",
+  "language": "zh-Hans",
+  "slides": 54,
+  "evidence_items": 24,
+  "source_blocks": 69,
+  "missing_content": [],
+  "mapping": [
+    {
+      "line": 1,
+      "slide": "cover"
+    },
+    {
+      "line": 3,
+      "slide": "cover"
+    },
+    {
+      "line": 9,
+      "slide": "body-01-1",
+      "element": "body-01-1-item-0"
+    },
+    {
+      "line": 11,
+      "slide": "body-01-1",
+      "element": "body-01-1-item-1"
+    },
+    {
+      "line": 7,
+      "slide": "body-01-1"
+    },
+    {
+      "line": 13,
+      "slide": "body-01-2",
+      "element": "body-01-2-item-0"
+    },
+    {
+      "line": 15,
+      "slide": "body-01-2",
+      "element": "body-01-2-item-1"
+    },
+    {
+      "line": 19,
+      "slide": "body-02-1",
+      "element": "body-02-1-item-0"
+    },
+    {
+      "line": 21,
+      "slide": "body-02-1",
+      "element": "body-02-1-item-1"
+    },
+    {
+      "line": 17,
+      "slide": "body-02-1"
+    },
+    {
+      "line": 23,
+      "slide": "body-02-2",
+      "element": "body-02-2-item-0"
+    },
+    {
+      "line": 25,
+      "slide": "body-02-2",
+      "element": "body-02-2-item-1"
+    },
+    {
+      "line": 31,
+      "slide": "body-03-1",
+      "element": "body-03-1-item-0"
+    },
+    {
+      "line": 33,
+      "slide": "body-03-1",
+      "element": "body-03-1-item-1"
+    },
+    {
+      "line": 35,
+      "slide": "body-03-1",
+      "element": "body-03-1-item-2"
+    },
+    {
+      "line": 29,
+      "slide": "body-03-1"
+    },
+    {
+      "line": 39,
+      "slide": "body-04-1",
+      "element": "body-04-1-item-0"
+    },
+    {
+      "line": 41,
+      "slide": "body-04-1",
+      "element": "body-04-1-item-1"
+    },
+    {
+      "line": 43,
+      "slide": "body-04-1",
+      "element": "body-04-1-item-2"
+    },
+    {
+      "line": 37,
+      "slide": "body-04-1"
+    },
+    {
+      "line": 47,
+      "slide": "body-05-1",
+      "element": "body-05-1-item-0"
+    },
+    {
+      "line": 49,
+      "slide": "body-05-1",
+      "element": "body-05-1-item-1"
+    },
+    {
+      "line": 51,
+      "slide": "body-05-1",
+      "element": "body-05-1-item-2"
+    },
+    {
+      "line": 45,
+      "slide": "body-05-1"
+    },
+    {
+      "line": 55,
+      "slide": "body-06-1",
+      "element": "body-06-1-item-0"
+    },
+    {
+      "line": 57,
+      "slide": "body-06-1",
+      "element": "body-06-1-item-1"
+    },
+    {
+      "line": 59,
+      "slide": "body-06-1",
+      "element": "body-06-1-item-2"
+    },
+    {
+      "line": 53,
+      "slide": "body-06-1"
+    },
+    {
+      "line": 65,
+      "slide": "body-07-1",
+      "element": "body-07-1-item-0"
+    },
+    {
+      "line": 67,
+      "slide": "body-07-1",
+      "element": "body-07-1-item-1"
+    },
+    {
+      "line": 63,
+      "slide": "body-07-1"
+    },
+    {
+      "line": 71,
+      "slide": "body-08-1",
+      "element": "body-08-1-item-0"
+    },
+    {
+      "line": 73,
+      "slide": "body-08-1",
+      "element": "body-08-1-item-1"
+    },
+    {
+      "line": 69,
+      "slide": "body-08-1"
+    },
+    {
+      "line": 77,
+      "slide": "body-09-1",
+      "element": "body-09-1-item-0"
+    },
+    {
+      "line": 79,
+      "slide": "body-09-1",
+      "element": "body-09-1-item-1"
+    },
+    {
+      "line": 75,
+      "slide": "body-09-1"
+    },
+    {
+      "line": 83,
+      "slide": "body-10-1",
+      "element": "body-10-1-item-0"
+    },
+    {
+      "line": 81,
+      "slide": "body-10-1"
+    },
+    {
+      "line": 90,
+      "slide": "body-10-2",
+      "element": "body-10-2-item-0"
+    },
+    {
+      "line": 94,
+      "slide": "body-11-1",
+      "element": "body-11-1-item-0"
+    },
+    {
+      "line": 96,
+      "slide": "body-11-1",
+      "element": "body-11-1-item-1"
+    },
+    {
+      "line": 98,
+      "slide": "body-11-1",
+      "element": "body-11-1-item-2"
+    },
+    {
+      "line": 92,
+      "slide": "body-11-1"
+    },
+    {
+      "line": 104,
+      "slide": "body-12-1",
+      "element": "body-12-1-item-0"
+    },
+    {
+      "line": 106,
+      "slide": "body-12-1",
+      "element": "body-12-1-item-1"
+    },
+    {
+      "line": 102,
+      "slide": "body-12-1"
+    },
+    {
+      "line": 110,
+      "slide": "body-13-1",
+      "element": "body-13-1-item-0"
+    },
+    {
+      "line": 112,
+      "slide": "body-13-1",
+      "element": "body-13-1-item-1"
+    },
+    {
+      "line": 114,
+      "slide": "body-13-1",
+      "element": "body-13-1-item-2"
+    },
+    {
+      "line": 108,
+      "slide": "body-13-1"
+    },
+    {
+      "line": 118,
+      "slide": "body-14-1",
+      "element": "body-14-1-item-0"
+    },
+    {
+      "line": 120,
+      "slide": "body-14-1",
+      "element": "body-14-1-item-1"
+    },
+    {
+      "line": 116,
+      "slide": "body-14-1"
+    },
+    {
+      "line": 126,
+      "slide": "body-15-1",
+      "element": "body-15-1-item-0"
+    },
+    {
+      "line": 124,
+      "slide": "body-15-1"
+    },
+    {
+      "line": 126,
+      "slide": "body-15-2",
+      "element": "body-15-2-item-0"
+    },
+    {
+      "line": 139,
+      "slide": "body-16-1",
+      "element": "body-16-1-item-0"
+    },
+    {
+      "line": 139,
+      "slide": "body-16-1",
+      "element": "body-16-1-item-1"
+    },
+    {
+      "line": 139,
+      "slide": "body-16-1",
+      "element": "body-16-1-item-2"
+    },
+    {
+      "line": 139,
+      "slide": "body-16-1",
+      "element": "body-16-1-item-3"
+    },
+    {
+      "line": 139,
+      "slide": "body-16-1",
+      "element": "body-16-1-item-4"
+    },
+    {
+      "line": 137,
+      "slide": "body-16-1"
+    },
+    {
+      "line": 147,
+      "slide": "body-17-1",
+      "element": "body-17-1-item-0"
+    },
+    {
+      "line": 145,
+      "slide": "body-17-1"
+    },
+    {
+      "line": 155,
+      "slide": "body-17-2",
+      "element": "body-17-2-item-0"
+    },
+    {
+      "line": 159,
+      "slide": "sources-1",
+      "element": "sources-1-item-0"
+    },
+    {
+      "line": 161,
+      "slide": "sources-1",
+      "element": "sources-1-item-1"
+    },
+    {
+      "line": 157,
+      "slide": "sources-1"
+    },
+    {
+      "line": 163,
+      "slide": "sources-2",
+      "element": "sources-2-item-0"
+    }
+  ],
+  "published_images": [
+    {
+      "id": "UI-01",
+      "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
+      "original": "assets/published/ui-01.png",
+      "source_sha256": "8b2ddac25a37746386f5db188a7c2052a63a85ff0830fcbe1fd8ae10fd2e677c",
+      "source_crop": [
+        0,
+        0,
+        1512,
+        480
+      ],
+      "capture_date": "2026-10-15"
+    },
+    {
+      "id": "UI-02",
+      "sha256": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
+      "original": "assets/published/ui-02.png",
+      "source_sha256": "a78bcbb6fe7d3f1a6c5947b585805b9517b12cf2399e9967693d1de426018fee",
+      "source_crop": [
+        1068,
+        112,
+        1900,
+        970
+      ],
+      "capture_date": "2026-10-15"
+    },
+    {
+      "id": "UI-03",
+      "sha256": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf",
+      "original": "assets/published/ui-03.png",
+      "source_sha256": "ccecb92328f9c5d66c0155abaf5c2e5978974442d2138854af10325e5bd2f076",
+      "source_crop": [
+        545,
+        120,
+        2448,
+        760
+      ],
+      "capture_date": "2026-10-15"
+    }
+  ],
+  "skill_version": "1.3.0",
+  "html_sha256": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225"
+}

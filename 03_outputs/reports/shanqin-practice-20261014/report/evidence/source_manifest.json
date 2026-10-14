@@ -1,0 +1,988 @@
+{
+  "as_of": "2026-10-14 Asia/Shanghai",
+  "scope": "local files only; raw inputs preserved",
+  "sources": [
+    {
+      "id": "M1",
+      "path": "../../千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md",
+      "bytes": 18118,
+      "sha256": "e8aece7975cb06069e1cdbf9d6193389f9407a90b82c47ff74cb035d982a30be",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md",
+      "availability": "bundled"
+    },
+    {
+      "id": "M2",
+      "path": "../../实践素材与事实清单-2026-10-14.md",
+      "bytes": 10990,
+      "sha256": "7e6cc512d638374d4e37d71a543a0dd7a143d17cac819009dfd4cf3ad8e9c833",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "实践素材与事实清单-2026-10-14.md",
+      "availability": "bundled"
+    },
+    {
+      "id": "M3",
+      "path": "../../核心发现与管理启示-2026-10-14.md",
+      "bytes": 5316,
+      "sha256": "c4b89fe35ea0a08d8d8d10b54d5b0bec60c6ca70c717f18030238eccf8e0f5da",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "核心发现与管理启示-2026-10-14.md",
+      "availability": "bundled"
+    },
+    {
+      "id": "M4",
+      "path": "../../source_materials/陕秦三端联动演示复盘-2026-10-10.md",
+      "bytes": 7555,
+      "sha256": "fb4733350033d2bb3ae372fb838316e111e9c4474cc607d0e5b6db68fdb0b82c",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "陕秦三端联动演示复盘-2026-10-10.md",
+      "availability": "bundled"
+    },
+    {
+      "id": "M5",
+      "path": "../../source_materials/补充协议.md",
+      "bytes": 729,
+      "sha256": "ae4c53f946f88f375c029f3f2e32c00ea9c5f149ee44fb1418c32813f0db6f91",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "补充协议.md",
+      "availability": "bundled"
+    },
+    {
+      "id": "M6",
+      "path": null,
+      "bytes": 895,
+      "sha256": "aa7cab3e007b3564e5349301e4ab6eba272bc34d573711cfe89925173dbe45cd",
+      "review": "全文阅读",
+      "purpose": "原始材料及操作证据",
+      "filename": "00-README.txt",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "M7",
+      "path": null,
+      "bytes": 180199,
+      "sha256": "59daf60e5b9747328dde870f6fac3ab28fa9e49bd96cd7fc0e2ebb7ece318449",
+      "review": "原图目视",
+      "purpose": "材料入口或记录定位，非执行结果截图",
+      "filename": "image_1791617269853_xmd4s5t.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "M8",
+      "path": null,
+      "bytes": 22854,
+      "sha256": "3aee9fd35470b34d3382066fffa8da1bb8fffeabaa388b38b7041f530374ddfa",
+      "review": "ZIP目录及内层文件一致性检查",
+      "purpose": "原始技能分发包",
+      "filename": "陕秦项目管家技能包.zip",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "M9",
+      "path": null,
+      "bytes": 61119,
+      "sha256": "7726edb37790c4af9151d3007891d2dbc37bcc98d11c6aad312f6b45d75434fe",
+      "review": "原图目视",
+      "purpose": "材料入口或记录定位，非执行结果截图",
+      "filename": "image_1791986415065_w86ukhg.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "R1",
+      "path": null,
+      "bytes": 1046059,
+      "sha256": "eacce09c55b05fb15372ec53aa66210552dfca791be2660b70c3b7509be093cf",
+      "review": "全文件解析；核读相关输入、调用、返回和答复",
+      "purpose": "历史工具记录，非本次远程重跑",
+      "filename": "3348c252-83d0-43c6-a838-030e53705d0c.jsonl",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "R2",
+      "path": null,
+      "bytes": 62441,
+      "sha256": "77a968fb7eaad0f36a768a92b6f1d952eb04c7daa0f5acdb49352bf928a52928",
+      "review": "全文件解析；核读相关输入、调用、返回和答复",
+      "purpose": "历史工具记录，非本次远程重跑",
+      "filename": "b55b6d62-aae9-4b47-8e0d-7bef9bdc2355.jsonl",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "R3",
+      "path": null,
+      "bytes": 52392,
+      "sha256": "efefba01fa3a92a5364f56b724febcd6f864c862e3f2804b7a435dadc45f5f0a",
+      "review": "全文件解析；核读相关输入、调用、返回和答复",
+      "purpose": "历史工具记录，非本次远程重跑",
+      "filename": "81da9cc9-9185-4183-8d8d-76e720f8802e.jsonl",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "R4",
+      "path": null,
+      "bytes": 68202,
+      "sha256": "6c491e7c699087ceb7b73a09f450aa9f1f34addfdfaa91eb6ebb09705f84827f",
+      "review": "全文件解析；核读相关输入、调用、返回和答复",
+      "purpose": "历史工具记录，非本次远程重跑",
+      "filename": "e22eafc5-9da8-4339-9bcc-2903cbcf2384.jsonl",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "R5",
+      "path": null,
+      "bytes": 768671,
+      "sha256": "c24b2f471bbfa0d4b406690cd3a4c0793d7dbfaff66425c9097a2151f4ad6df3",
+      "review": "前140行完整解析与业务核读；交付时检查到末尾追加截图补查任务，原引用区间未变",
+      "purpose": "历史工具记录，非本次远程重跑",
+      "hash_scope": "first 768671 bytes / 140 lines, the reviewed version; later appends excluded",
+      "filename": "bda09640-0b4e-4605-97e6-208a3b86c468.jsonl",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K1",
+      "path": null,
+      "bytes": 5097,
+      "sha256": "36f03c20d3adfba1d35868cfbeef9d1b089fe21853048ed7aaae646c72b68149",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-prep.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K1-installed",
+      "path": null,
+      "bytes": 10719,
+      "sha256": "9f68f6d002a45b2e7b12b5888ac5ef09d098db248d915c0efe6d014aa6f89ae2",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K2",
+      "path": null,
+      "bytes": 2749,
+      "sha256": "1407b5d592e384800823d031f0ee870ea23d5e17d34e6a7096e534238839887e",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-contract-entry.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K2-installed",
+      "path": null,
+      "bytes": 4557,
+      "sha256": "4578ad13786343ac0f5503c6392c9b0c7a7848b06d6e94a48d582942ba06dc6d",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K3",
+      "path": null,
+      "bytes": 2852,
+      "sha256": "4a36523dc9b6bcccf764d8aacd14ada83cbb11a70e1a0a852e300c8f1f7ce17a",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-risk-scan.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K3-installed",
+      "path": null,
+      "bytes": 4862,
+      "sha256": "bb0279aa22950ef9c7a52ac3daafe33dd111f37cfc65e2b14c25b1b0fd5a61f8",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K4",
+      "path": null,
+      "bytes": 2858,
+      "sha256": "a9e74bb629c0e538079facb0cbb8bde887cff1c59d10b2a1ed61b1400a301f94",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-risk-track.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K4-installed",
+      "path": null,
+      "bytes": 4598,
+      "sha256": "c95e940cd057b8a4fc775356052659fcbdc4d0be0bb9fd2effb8e5e7d01d2f3c",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K5",
+      "path": null,
+      "bytes": 2855,
+      "sha256": "e6601b5ce6e2902cd0bfc3b16adf4be5bce5ef1ec16cce8148dafd01f4886eca",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-briefing.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K5-installed",
+      "path": null,
+      "bytes": 4478,
+      "sha256": "e2c4ecb9f9ab20e0c338c819541fe06ee587b7bd687f971bced5e9b3bce512e3",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K6",
+      "path": null,
+      "bytes": 2149,
+      "sha256": "590ca41d23b8bfe5aa5f7de6458904f5ea58d68a1a2b1c6dc1666e6454f7206e",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-customer-decision.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K6-installed",
+      "path": null,
+      "bytes": 3039,
+      "sha256": "b4b29aee64d9fa38a003ec47f400b3b4488fb8abe2a70f93aa1463fdcdf2c1a5",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K7",
+      "path": null,
+      "bytes": 3298,
+      "sha256": "afb2605aea63de363f311f20f8a7eed889d5ec0815cd12fae247c6b0ef32e74d",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "shanqin-daily-patrol.skill",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "K7-installed",
+      "path": null,
+      "bytes": 6000,
+      "sha256": "d5d0a03fe8d6db468bc9b66234aa452545c99ed89a18eb48ee7781108aa28d0f",
+      "review": "内部SKILL.md全文阅读并比对安装副本",
+      "purpose": "流程设计与示例约束，未执行",
+      "filename": "SKILL.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D001",
+      "path": null,
+      "bytes": 1342,
+      "sha256": "1c273de875173540f5b88f2d14d761dc9cf8627e1ef43d7afc1a20fc7e65ae98",
+      "review": "全文阅读",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D002",
+      "path": null,
+      "bytes": 5738,
+      "sha256": "71da5213a3ab3e9c109d230681c3cb5ae648eb2874913a244530cc6e48293f0e",
+      "review": "全文阅读",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "2026-10-11.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D003",
+      "path": null,
+      "bytes": 1067018,
+      "sha256": "6c8e191304b3c4922f37b0af732c77166f756bdb293321324c84e637fa1ff943",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-16x9.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D004",
+      "path": null,
+      "bytes": 453432,
+      "sha256": "0f0cc41c06e9df55c2c18221e6c37e3241cb1ba15c3fa4e890e74177b3aa6d8b",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-900x383.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D005",
+      "path": null,
+      "bytes": 1572,
+      "sha256": "ee016ac003b3dda5731e57cbdbd50a779571f652059f47bd971b35e59a97944e",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "cover-16x9.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D006",
+      "path": null,
+      "bytes": 1001639,
+      "sha256": "f2a97bf04855f522d3d22b61ae0213ad7a95f9786334fa7ded8eb151ccbbfed1",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "00-demo-three-gates.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D007",
+      "path": null,
+      "bytes": 733698,
+      "sha256": "3a76adec64b861e49aa0f2f2701a725ac5818fff5ca6b6036c9145a57948560c",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "01-two-evaluations.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D008",
+      "path": null,
+      "bytes": 1138944,
+      "sha256": "5b23198531474b2db55b8d622adee8d1d1961919d52901a2498cd9f0b1fdf3fd",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "02-probabilistic-generation-deterministic-gate.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D009",
+      "path": null,
+      "bytes": 667338,
+      "sha256": "8b45de3e858b1ab8e4e6b95a03201be2b91ee619a0b9a7ea4fa68953d88979e9",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "03-gates-and-owners.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D010",
+      "path": null,
+      "bytes": 707552,
+      "sha256": "7bf3c68fd68738cbea1fc1b1a6cbecdd7c0339a5e4519457f0c611163c4ff2f9",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "04-three-stages.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D011",
+      "path": null,
+      "bytes": 609664,
+      "sha256": "1026567c6b96a0dea20571a760a5fe9fd2214f60c845f38e5b70b8e9282f7a9c",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "05-project-skeleton-story-sdd.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D012",
+      "path": null,
+      "bytes": 485088,
+      "sha256": "bdc41f9bea04cdf6c85e00d007949191efae67b20f9911b48377229bc1effeb6",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "06-two-methodologies.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D013",
+      "path": null,
+      "bytes": 1728,
+      "sha256": "496c30df8a608e2c21ae39abcf5e9fca6658e4de6e4921e4e42fc67ca900d04c",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "00-demo-three-gates.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D014",
+      "path": null,
+      "bytes": 1098,
+      "sha256": "4035a861d77f8385745b1ae0fb2beeafd9e560202e62d99b695b73ef3e689815",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "01-two-evaluations.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D015",
+      "path": null,
+      "bytes": 1053,
+      "sha256": "eecea6865ca2bd800c594e46456c969e36cbe8311110f3966b620083768a969c",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "02-probabilistic-generation-deterministic-gate.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D016",
+      "path": null,
+      "bytes": 1032,
+      "sha256": "0878c7734a307eddb3860a1aa5a7161f14420abc88cabc84ca5cc497c464a36a",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "03-gates-and-owners.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D017",
+      "path": null,
+      "bytes": 1331,
+      "sha256": "4434e83c0249c6e7ebad50cc14669d0621f6765b0c64f0b2f473de38c0246954",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "04-three-stages.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D018",
+      "path": null,
+      "bytes": 1380,
+      "sha256": "b789178584180c131e0473966f29c7188ddfbfbde5f0ce43d9b971453dd7db08",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "05-project-skeleton-story-sdd.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D019",
+      "path": null,
+      "bytes": 1589,
+      "sha256": "71e37935d1c74cb1ed1064ba79c57e3cffbec41bb75e0e61c70d6391dcb6c599",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "06-two-methodologies.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D020",
+      "path": null,
+      "bytes": 211090,
+      "sha256": "1e7c37e94b5428024568ea9264cf7385f2b18230aee5ec546f8bad977f9437e7",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "01-rejected-robot-icon.jpg",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D021",
+      "path": null,
+      "bytes": 683012,
+      "sha256": "5dc0abd97b3ec1b7db996eaae9c53f1f0aa20287fef32d9c99947e1c6a991efa",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "05-project-skeleton-story-sdd-v1-superseded.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D022",
+      "path": null,
+      "bytes": 658419,
+      "sha256": "4f7f35f4f6ea85a4d2c10f6baf4824cfc23d43a2a74351e5a324b6fcd6ccdbf7",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "05-two-methodologies-v1-rejected-dashed-badge.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D023",
+      "path": null,
+      "bytes": 22651,
+      "sha256": "cd289f32ce7ff414d753d3c4cff641e0df2aabc36cd1a8feafd59c397ef33b5d",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "publish-ready-2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D024",
+      "path": null,
+      "bytes": 15952,
+      "sha256": "858eb3155634efdefe07d9199c7306161d63ebc7362be63a76a541b4c6ec56b0",
+      "review": "全文阅读",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "publish-status-2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D025",
+      "path": null,
+      "bytes": 1424136,
+      "sha256": "fc76d319ce509c64ea5b2ec125290fa8ebc27f9a593269e89f7bdbc66fcc02ed",
+      "review": "目视检查",
+      "purpose": "已有衍生图/幻灯片的接触表",
+      "filename": "contact-sheet-illustrations.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D026",
+      "path": null,
+      "bytes": 3357800,
+      "sha256": "fac2b9e4285a8785836fbf8398d6b0df87637fbc90917e407176ec7b6300c645",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "mobile-390-full.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D027",
+      "path": null,
+      "bytes": 3541397,
+      "sha256": "fac13a2387d2556b33b1df17006d104e8f1fcf0006a599317a5a89ebd0aa9246",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "mobile-390-overview.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D028",
+      "path": null,
+      "bytes": 3707721,
+      "sha256": "864e1c3cb16f90dde07842f180962e851c65d9b81a07fd2bd119f53ed5aaad19",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "mobile-430-full.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D029",
+      "path": null,
+      "bytes": 3923913,
+      "sha256": "afd65dc69c3ba6faf39265e27c00247a58a8bef05bea93310c750554f1f6a123",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "mobile-430-overview.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D030",
+      "path": null,
+      "bytes": 35750,
+      "sha256": "083ce75ed3bf3c4de76c433ec706aacc9e52f98ed143be342b4aba94c9bc92e6",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "render-source.html",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D031",
+      "path": null,
+      "bytes": 20662,
+      "sha256": "4a62ed7b62adc4ebe0e6b169bca5ae6169ef0304acf997e61eee9186d04ae2a5",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "render-source.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D032",
+      "path": null,
+      "bytes": 6909,
+      "sha256": "8159a9c7877767388369870d02cb3e4adf8300f5c1a1d2e3c8f7a91a6cdc0e96",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "review-2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D033",
+      "path": null,
+      "bytes": 5352,
+      "sha256": "aa560d11ea5f00f8e530e7ea2d04f433419663cd4b4d08147e4e00c33ecf96f5",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "wechat-draft-handoff-prompt.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D034",
+      "path": null,
+      "bytes": 1137146,
+      "sha256": "bd92a8f68612b2b172f1ed61d0eb7a774be61538040c799a9b5c6536577a5d48",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-16x9.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D035",
+      "path": null,
+      "bytes": 480264,
+      "sha256": "f47ef3b14f022b8ccefebb806de8c2a3229abb033b660a0f78df98e60ae1318f",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-900x383.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D036",
+      "path": null,
+      "bytes": 2339,
+      "sha256": "b0049b7f46fcf4915a1b5b0c784d41fc8d899baa0fd3a87c1299741ec78e887b",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "cover-16x9.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D037",
+      "path": null,
+      "bytes": 1703,
+      "sha256": "166450163929c8fb77d921eee64c8c4a3ac03cff7516aee2b798b9782e039165",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "cover-2.35x1.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D038",
+      "path": null,
+      "bytes": 1137146,
+      "sha256": "bd92a8f68612b2b172f1ed61d0eb7a774be61538040c799a9b5c6536577a5d48",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-16x9-source.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D039",
+      "path": null,
+      "bytes": 280988,
+      "sha256": "3da25628d5474ddc0aba5a1cd9ae41423ce9c26ce782229916fb15e6508256a0",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "cover-rejected-uncentered.jpg",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D040",
+      "path": null,
+      "bytes": 583374,
+      "sha256": "5de1699558763c54f2937f0fa833d7b0f1cc38f41418e934a46b58106af3a3a1",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "01-boundary-split.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D041",
+      "path": null,
+      "bytes": 1001639,
+      "sha256": "f2a97bf04855f522d3d22b61ae0213ad7a95f9786334fa7ded8eb151ccbbfed1",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "02-three-gates-flow.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D042",
+      "path": null,
+      "bytes": 1601,
+      "sha256": "dae01863d042703e321ab4b65a8dfdf9a929709fd22622be376362656576a45c",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "01-boundary-split.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D043",
+      "path": null,
+      "bytes": 1728,
+      "sha256": "496c30df8a608e2c21ae39abcf5e9fca6658e4de6e4921e4e42fc67ca900d04c",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "02-three-gates-flow.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D044",
+      "path": null,
+      "bytes": 5698,
+      "sha256": "19eaaaac67e82a6844bd19f1d30ce7e0df8635101191c02d0a496f4fc04ded5e",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "publish-ready-2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D045",
+      "path": null,
+      "bytes": 5370,
+      "sha256": "424b4bb12c3b201156694ef4bc5f0c7d4ce904da8d5e872df0e4c84738ffe888",
+      "review": "全文阅读",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "publish-status-2026-10-10.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D046",
+      "path": null,
+      "bytes": 24330,
+      "sha256": "3938124f1d8d2a21e5071a6e55bc31661858a2792282ca25fbf33f04010c6dc2",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 从一场千问 Agent 实战回看：在公司推 coding agent，卡住的往往不是技术 - 2026-10-10-v1.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D047",
+      "path": null,
+      "bytes": 2487,
+      "sha256": "3268ecd59e5801ff6df0ec938b13e36e52f6e254af6715b2ec0669bd03d62580",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 从一场千问 Agent 实战回看：在公司推 coding agent，卡住的往往不是技术 - NotebookLM-prompt.txt",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D048",
+      "path": null,
+      "bytes": 21921,
+      "sha256": "19c1594e706b783075a98322acdc5eb670157954c1cecebae7e75061f83fa320",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 从一场千问 Agent 实战回看：在公司推 coding agent，卡住的往往不是技术 - NotebookLM.txt",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D049",
+      "path": null,
+      "bytes": 6911,
+      "sha256": "e81d89bbea89357802c91aa38842cb4d636b375793630aaaa89208ecf824724a",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 陕秦项目管家跑通三端联动以后，我才明白 AI 该在哪里停下来 - 2026-10-10-v1.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D050",
+      "path": null,
+      "bytes": 1186,
+      "sha256": "5adffb3c76d02149dfe6ebb7b6f1c41ffab9ffeafbbdd132967ae50b0582135b",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 陕秦项目管家跑通三端联动以后，我才明白 AI 该在哪里停下来 - NotebookLM-prompt.txt",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D051",
+      "path": null,
+      "bytes": 5470,
+      "sha256": "d740bea8343f3383031fc7430fe3ca0f4adc3233b96b00702fa679be06fd88dc",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "公众号 - 陕秦项目管家跑通三端联动以后，我才明白 AI 该在哪里停下来 - NotebookLM.txt",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D052",
+      "path": null,
+      "bytes": 3514,
+      "sha256": "94d99e3c390d2be80ba64962755c9c2deb91b16ab8651be652036b2f46f9a168",
+      "review": "全文阅读",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "README.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D053",
+      "path": null,
+      "bytes": 20351,
+      "sha256": "657b3b9d13d6f7cd011f759bc506feeadd4ae4201c36f155f593049969e35b3a",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "deck.json",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D054",
+      "path": null,
+      "bytes": 5653,
+      "sha256": "d1a2227ee78b567156972d390ba2ef742c5e6e54ffc7f85001914c6fdb6d5c5f",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "plan.md",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D055",
+      "path": null,
+      "bytes": 549069,
+      "sha256": "f2d28e4df1883aa14c612f7665f94ec2904338f4abb93f037118d3ce8103a14d",
+      "review": "目视检查",
+      "purpose": "已有衍生图/幻灯片的接触表",
+      "filename": "contact-sheet.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D056",
+      "path": null,
+      "bytes": 66980,
+      "sha256": "124098e1725d8bc003b12ba49d559042b6cc85e49eb9c40fc686e06f3461061d",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-01.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D057",
+      "path": null,
+      "bytes": 62385,
+      "sha256": "bad021d19b60e9c742a498bf8474d91fa54121e175fb541817117110a2230fc3",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-02.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D058",
+      "path": null,
+      "bytes": 137989,
+      "sha256": "4b4ea91e3a5764a37e19e36f615b4d69d652020989019899ec217de03175c7bd",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-03.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D059",
+      "path": null,
+      "bytes": 79041,
+      "sha256": "94f775e9bb68f0b10ffbe0fe3fea2e3e7422b36d7a786b763ec6fd9bf2452d77",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-04.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D060",
+      "path": null,
+      "bytes": 123370,
+      "sha256": "a94698d3f52acbcf23f8d51825bec3825520cf567a3538cf250b3b5d085734a8",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-05.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D061",
+      "path": null,
+      "bytes": 111569,
+      "sha256": "b4aa39d26d5306cc0632aaa25e6bab437c50be5fe6f8dbe0586336cc5540c295",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-06.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D062",
+      "path": null,
+      "bytes": 86992,
+      "sha256": "2fd8ec037784d0e9b440ee1b1c99807c2e3d36a0fadcd7949eb761dd56bd80e9",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-07.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D063",
+      "path": null,
+      "bytes": 96201,
+      "sha256": "42c3cc8c1f94c5105f07a794b163427bf3882ce7de3c331bed66c92cb1b259f6",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-08.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D064",
+      "path": null,
+      "bytes": 102606,
+      "sha256": "5902cf1e2f930b3c6b424b9e9e0884872ed2501d5cf0fbdfe83de38abe482c77",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-09.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D065",
+      "path": null,
+      "bytes": 107540,
+      "sha256": "5b0fc90b0fed3e4721e60725e51e765e7a27342c01af1ed49a54bec9eea4595b",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-10.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D066",
+      "path": null,
+      "bytes": 125359,
+      "sha256": "5381679f6238095dd24556d8aefcc5ad755e1b8ddcce20bc55a53ea1d461f937",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-11.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D067",
+      "path": null,
+      "bytes": 119298,
+      "sha256": "98d6542ad12193150207c145fdee073cb86abfb31bde06e89429e5a129b1093c",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-12.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D068",
+      "path": null,
+      "bytes": 118407,
+      "sha256": "5414a617b494fe96c8e582b068a3bcc929cecdd8b5dff3d590a33b806c594504",
+      "review": "枚举及文件指纹，未逐张目视",
+      "purpose": "衍生图像或制作中间文件，不作独立运行证据",
+      "filename": "slide-13.png",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D069",
+      "path": null,
+      "bytes": 542630,
+      "sha256": "51a5a13a14308b8e76db79320e4c06becf6855826de8eb46c6964f2e16aff210",
+      "review": "文本读取、相关性筛查或派生内容比较",
+      "purpose": "文章/演示的衍生内容或制作说明，不重复计算证据",
+      "filename": "qwen-agent-coding-agent-retro-20261010.html",
+      "availability": "local-only; not included in public archive"
+    },
+    {
+      "id": "D070",
+      "path": null,
+      "bytes": 87701,
+      "sha256": "ec214574e4a103cdf411d912fe2c68409771ceec134c491b89160ce0c3eada16",
+      "review": "13页文本和13份备注全提取核读；已有接触表目视",
+      "purpose": "既有分享内容，非现场原始操作画面",
+      "filename": "qwen-agent-coding-agent-retro-20261010.pptx",
+      "availability": "local-only; not included in public archive"
+    }
+  ],
+  "archive_note": "Original source hashes preserved. Bundled paths are relative to this manifest. Other sources stay local; original absolute-path manifest is retained locally. R5 remains bound to the originally reviewed prefix."
+}

@@ -1,0 +1,131 @@
+/* Task-local reading and A4 print layout; HK Technology model/assets unchanged. */
+body{display:flex;flex-direction:column}
+#toolbar,#navigation{flex-shrink:0}
+#workspace{flex:1;min-height:0;height:auto}
+body:not(.editing) #toolbar > :is(#notes-toggle,#presenter,#qa,#fullscreen,.motion,.language-picker,#export,#template,#help),
+body:not(.editing) #toolbar > label:has(#theme-select){display:none!important}
+body.report-mode:not(.editing) .report-edit-section{display:none}
+#toolbar{min-height:56px;height:auto;padding:10px 22px;flex-wrap:wrap}
+#deck-name{max-width:420px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}
+body.report-mode #toolbar #mode-label{display:none}
+body.report-mode #navigation{height:30px;min-height:30px}
+body.report-mode #navigation #status{font-size:11px}
+body.report-mode #navigation #page-number{font-size:11px}
+.report-hero{min-height:560px;padding-top:50px;padding-bottom:30px}
+.report-hero-wash{background:linear-gradient(90deg,rgba(255,255,255,.94),rgba(255,255,255,.62) 58%,rgba(255,255,255,.04))}
+.report-hero .report-heading{max-width:1040px;font-size:clamp(34px,4.4vw,60px)!important;line-height:1.3;letter-spacing:-.035em}
+.report-cover-subtitle{display:block;font-size:.6em;line-height:1.65;margin-top:16px;letter-spacing:0}
+.report-hero .report-logo{max-width:430px;width:43%;margin-top:44px}
+.report-hero .report-object{font-size:15px!important;line-height:1.9}
+.report-reading{max-width:1300px;grid-template-columns:190px minmax(0,1fr);gap:56px;padding:58px 48px 32px}
+.report-main .report-heading{font-size:28px!important;line-height:1.5;letter-spacing:-.02em;margin-bottom:24px}
+.report-main .report-object.text-element{font-size:17px!important;line-height:1.9;letter-spacing:.01em}
+.report-main .report-section-top{border-top:1px solid #BDA8AA;padding-top:14px;position:relative}
+.report-main .report-section-top::before{content:"";position:absolute;left:0;top:-2px;width:100px;height:3px;background:#DB0011}
+.report-main .report-logo{width:130px;max-height:44px;margin-top:28px}
+.report-main>.report-section{padding-bottom:32px;margin-bottom:32px;border-bottom:0}
+.report-continuation .report-section-top,.report-continuation .report-heading,.report-before-continuation .report-logo{display:none}
+.report-main>.report-before-continuation{margin-bottom:22px;padding-bottom:0}
+.report-object .rich-paragraph{margin:0}
+.report-source-photo .report-image{max-width:100%;width:100%}
+.report-source-photo .report-object.image-element{border:1px solid #D7D7D7;background:#FAFAFA}
+.report-source-photo .report-object.text-element{font-size:14px!important;line-height:1.8;color:#555}
+.report-source-photo .report-object .rich-paragraph{margin-bottom:8px}
+.text-link{cursor:pointer;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.text-link:focus-visible,summary:focus-visible{outline:2px solid #DB0011;outline-offset:3px}
+.report-nav-item{padding:13px 10px;font-size:13px}
+.report-nav-number{display:none}
+.report-nav-note{font-size:11px;line-height:1.7;color:#666;padding:14px 4px}
+.report-card{padding:24px!important;border-top:3px solid #DB0011}
+.report-card-title{font-size:19px;line-height:1.5;margin:0 0 12px}
+.report-card p{font-size:16px;line-height:1.8;white-space:pre-line;margin:0}
+.report-grid.report-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.report-grid.report-cards>.report-text{grid-column:1/-1}
+.report-grid.report-cards>.report-text .report-object{font-size:13px!important;color:#666}
+.report-object.table-element{border:0}
+.report-object.table-element table{min-width:0;table-layout:fixed}
+.report-object.table-element td,.report-object.table-element th{font-size:14px;line-height:1.75;padding:14px 16px}
+.evidence-intro{margin:0 0 24px;font-size:14px;line-height:1.8;color:#555}
+.evidence-controls{display:flex;gap:12px;margin:0 0 20px}
+.evidence-controls button{font-size:12px;padding:8px 12px}
+.evidence-detail{margin:0 0 10px;border:1px solid #D7D7D7;break-inside:avoid}
+.evidence-detail summary{list-style:none;cursor:pointer;padding:17px 20px;display:flex;gap:14px;align-items:center;font-size:15px;font-weight:600;line-height:1.5;background:#FAFAFA}
+.evidence-detail summary::-webkit-details-marker{display:none}
+.evidence-detail summary::before{content:"+";font-size:19px;color:#DB0011;width:14px;flex-shrink:0}
+.evidence-detail[open] summary::before{content:"−"}
+.evidence-detail .report-section{padding:20px;margin:0}
+.evidence-detail .report-section{scroll-margin-top:84px}
+.evidence-detail .report-section-top,.evidence-detail .report-heading,.evidence-detail .report-logo{display:none}
+.evidence-detail .report-blocks{gap:12px}
+.evidence-detail .report-object.text-element{font-size:14px!important;line-height:1.8}
+.evidence-back{margin-top:18px;font-size:12px}
+.report-footer{font-size:11px;line-height:1.7;gap:30px}
+@media(max-width:1100px){.report-reading{grid-template-columns:160px minmax(0,1fr);gap:30px;padding:38px 28px}}
+@media(max-width:760px){
+ #toolbar{padding:8px 12px;gap:6px!important;min-height:48px}
+ body:not(.editing) #toolbar #mode{display:none}
+ #toolbar button{font-size:12px;padding:6px 8px}
+ .report-hero{min-height:550px;padding:32px 24px}
+ .report-hero .report-heading{font-size:34px!important;line-height:1.45;margin-top:22px}
+ .report-hero .report-logo{max-width:300px;width:90%;margin-top:40px}
+ .report-hero-wash{background:rgba(255,255,255,.78)}
+ .report-reading{display:block;padding:28px 24px}
+ .report-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;max-height:none;padding-top:12px;margin-bottom:36px}
+ .report-nav>.report-eyebrow,.report-nav-note{grid-column:1/-1}
+ .report-nav-item{font-size:12px;padding:9px 8px}
+ .report-main .report-heading{font-size:23px!important}
+ .report-main .report-object.text-element{font-size:16px!important;line-height:1.9}
+ .report-grid.report-cards{grid-template-columns:1fr!important}
+ .report-object.table-element table{min-width:540px}
+ .evidence-detail summary{font-size:14px;padding:14px}
+ .evidence-detail .report-section{padding:16px}
+ .report-footer{display:block;padding:20px 24px}
+ .report-footer span{display:block;margin-top:6px}
+ body.report-mode #navigation #status{display:none}
+}
+@media print{
+ :root,body,#workspace{background:#fff!important}
+ @page{size:A4 portrait;margin:15mm 14mm 16mm;
+   @bottom-left{content:"HK Technology · 内部管理讨论";font:8pt Arial;color:#666}
+   @bottom-right{content:counter(page) " / " counter(pages);font:8pt Arial;color:#666}
+ }
+ html,body,body.report-mode,#workspace{height:auto!important;overflow:visible!important;display:block!important}
+ #report-view{height:auto!important;overflow:visible!important;scrollbar-gutter:auto}
+ body.report-mode #report-view{display:block!important}
+ .report-reading{display:block!important;padding:0!important;max-width:none}
+ .report-nav,.evidence-controls,.evidence-back,#message,.report-footer{display:none!important}
+ .report-hero{min-height:0;height:125mm;padding:16mm 10mm;margin:0 0 12mm;break-after:page;box-sizing:border-box}
+ .report-hero .report-heading{font-size:27pt!important;line-height:1.4;max-width:none}
+ .report-hero .report-object{font-size:10pt!important;line-height:1.9}
+ .report-hero .report-logo{width:75mm;max-width:80%;margin-top:12mm}
+ .report-main .report-heading{font-size:15pt!important;line-height:1.5;margin:0 0 5mm;break-after:avoid}
+ .report-main .report-section-top{margin-bottom:4mm;padding-top:3mm;break-after:avoid}
+ .report-main .report-object.text-element{font-size:10.5pt!important;line-height:1.7;letter-spacing:0}
+ .report-main .report-logo{display:none}
+ .report-main>.report-section{margin:0 0 8mm;padding:0;break-inside:auto}
+ .report-main>.report-before-continuation{margin-bottom:4mm}
+ .report-blocks{gap:4mm;display:block}
+ .report-block{margin-bottom:4mm;break-inside:avoid}
+ .report-object.table-element{overflow:visible}
+ .report-object.table-element table{min-width:0!important;width:100%;height:auto;table-layout:fixed}
+ .report-object.table-element th,.report-object.table-element td{font-size:9pt!important;line-height:1.55;padding:3mm}
+ .report-object.table-element tr{break-inside:avoid}
+ .report-grid.report-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:4mm}
+ .report-section:has(.report-cards){break-inside:avoid}
+ .report-source-photo{break-inside:avoid!important}
+ .report-source-photo .report-image{max-width:182mm}
+ .report-source-photo .report-object.text-element{font-size:9pt!important;line-height:1.55}
+ .report-card{padding:4mm!important}
+ .report-card-title{font-size:11pt;margin-bottom:2mm}
+ .report-card p{font-size:9.5pt;line-height:1.6}
+ .report-grid.report-cards>.report-text .report-object{font-size:9pt!important}
+ .evidence-intro{font-size:9.5pt;margin-bottom:5mm}
+ .evidence-detail{margin-bottom:5mm;break-inside:avoid;border:1px solid #D7D7D7}
+ .evidence-detail summary{font-size:11pt;padding:3mm 4mm;break-after:avoid}
+ .evidence-detail summary::before{content:none!important}
+ .evidence-detail .report-section{padding:3mm 4mm}
+ .evidence-detail .report-object.text-element{font-size:9pt!important;line-height:1.55}
+ .evidence-detail .report-block{margin-bottom:2mm}
+ .text-link{color:#222!important;text-decoration:none}
+ .report-hero-photo,.report-hero-wash,.report-card,.evidence-detail,table{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}

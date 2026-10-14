@@ -1,0 +1,14 @@
+# Local originals and historical exports are retained, never published.
+report/.local-only/
+evidence_supplement/
+report/assets/*
+!report/assets/published/
+report/html_src/deck.json
+report/html_src/image_manifest.json
+# Old QA contains fonts, renders, duplicated HTML/PDF, and local session tools.
+report/qa/*
+!report/qa/verify_archive.py
+!report/qa/archive_checks.json
+__pycache__/
+*.pyc
+.DS_Store

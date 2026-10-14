@@ -1,0 +1,14 @@
+# Local state and dependencies
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.venv*/
+# Never include local raw evidence or credential packages.
+**/.local-only/
+*.jsonl
+*.skill
+*.ttc
+*.ttf
+*.env
+.env.*

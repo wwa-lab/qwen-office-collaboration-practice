@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-15",
+  "status": "static_checks_passed",
+  "html_sha256": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225",
+  "theme": "hk-technology",
+  "default_view": "report",
+  "slides": 54,
+  "source_blocks": 69,
+  "evidence_items": 24,
+  "images": [
+    {
+      "id": "UI-01",
+      "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
+      "pixels": [
+        1512,
+        480
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "body-03-1"
+    },
+    {
+      "id": "UI-02",
+      "sha256": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
+      "pixels": [
+        1900,
+        970
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "body-04-1"
+    },
+    {
+      "id": "UI-03",
+      "sha256": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf",
+      "pixels": [
+        2448,
+        760
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "body-05-1"
+    }
+  ],
+  "full_original_screenshots_embedded": false,
+  "relative_links_checked": 46,
+  "bundled_source_hashes_verified": 5,
+  "scripts_syntax_checked": 2,
+  "csp_hashes_verified": true,
+  "external_resource_references": 0,
+  "public_files": 32,
+  "ecc_aws_false_positives": {
+    "count": 2,
+    "png_sha256": "b93109ee0088041ae853a4e15dce5fd895d823f6134a725d7ce8213b2d821035",
+    "scope": "exact contentLogo data URI lines only"
+  },
+  "not_verified": [
+    "browser visual layout",
+    "browser interaction and save/reopen",
+    "PDF print pagination"
+  ],
+  "files_sha256": {
+    ".gitignore": "4be6d7fedd8f18b14c6b29b4afc629927a297830729df943fb33779b5e55f132",
+    "README.md": "59b92c25401ba721eacbdd5e4d59123e63834e0f16d5f528efa2cd490f04f37f",
+    "publication_files.json": "651eb5ed8d4af3d9e1591d210e1e517e4a11d0b499002e3556e51dbce176979c",
+    "report/01_material_inventory.md": "4a706aa8047476804bf337fd706835b8d42bcf692caa71b9122d916691bc1329",
+    "report/02_evidence_matrix.md": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
+    "report/03_management_analysis.md": "94b44ab2fa45c9a8411d76273b7b1c78b36e652eb60c2542ee987a88b9f90bd6",
+    "report/04_final_report.html": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225",
+    "report/04_final_report.md": "72e5960c8203fa6a69f9a75c76e289f2ea612dad85aa186418cc4778b2823bde",
+    "report/05_open_questions.md": "1801fa8012aa58d0cbb69967927844ee24df3ddfabcd6a8744a6e3263af1c5a2",
+    "report/06_html_readme.md": "246e72ea2ba7f4a312c11c89d03fd7a9ed239837506ab0e0fd311b2a3a9cc036",
+    "report/07_operational_screenshot_evidence.md": "32255937932df21d5b799824abb5f417d05d25b190858e0d2ca49cb16d41fabc",
+    "report/assets/published/ui-01.png": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
+    "report/assets/published/ui-02.png": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
+    "report/assets/published/ui-03.png": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf",
+    "report/evidence/file_catalog.md": "6ae6a784033a54ef67be571ae478a14cddaab182f5f1c598a0338e8244cae47c",
+    "report/evidence/record_index.md": "8f104d37b730b328b12cf4786b464d1aca0d9f8737cd077cdb4e9ead14339255",
+    "report/evidence/selected_factual_extracts.json": "92c451c313ec10ba1b2851ee6489f5ac099f585bb46c090e007d3917db1e271a",
+    "report/evidence/source_manifest.json": "bce62155dafb66c5431f3c62479fbfd3194a7997c7bcde904835c75fde390c93",
+    "report/html_src/build_dependencies.json": "865e1c34ac65e1d76ff7bbe42a112c71968d637acc5754f86d23b01fc5fe38eb",
+    "report/html_src/build_report.py": "75d9601d8738a67bd815b8dc4ed583193aaddb73d33f049d241ff42dcdc13882",
+    "report/html_src/content_map.json": "646b87c84cabacc75f3dbd8bba5ecb2a8bf060b163d0a2b4d0db0d0deb3b34df",
+    "report/html_src/operational_image_manifest.json": "bf5b59ec5d95eec805682d907fb483060b4a5f38ed8ce7dab2e380c7ac25b40f",
+    "report/html_src/report.css": "71346fa00f49c6332451007c033c932358f8ed1f8b9c922c1d182ef3f4ba64ef",
+    "report/html_src/report.js": "7431afa86d7c6b9e9965511f0aee6b211654f52010cddf657aa627552053afe6",
+    "report/qa/verify_archive.py": "6ff81e77b2379d7740e195a3bc6df830b531ea436d3d94f48a4b7842f68b41f3",
+    "source_materials/README.md": "600a2b9ee26625200bbc72436eac8238c656aeb7e2381a7a45d8a8fb13c015ff",
+    "source_materials/补充协议.md": "ae4c53f946f88f375c029f3f2e32c00ea9c5f149ee44fb1418c32813f0db6f91",
+    "source_materials/陕秦三端联动演示复盘-2026-10-10.md": "fb4733350033d2bb3ae372fb838316e111e9c4474cc607d0e5b6db68fdb0b82c",
+    "千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md": "e8aece7975cb06069e1cdbf9d6193389f9407a90b82c47ff74cb035d982a30be",
+    "实践素材与事实清单-2026-10-14.md": "7e6cc512d638374d4e37d71a543a0dd7a143d17cac819009dfd4cf3ad8e9c833",
+    "核心发现与管理启示-2026-10-14.md": "c4b89fe35ea0a08d8d8d10b54d5b0bec60c6ca70c717f18030238eccf8e0f5da"
+  }
+}

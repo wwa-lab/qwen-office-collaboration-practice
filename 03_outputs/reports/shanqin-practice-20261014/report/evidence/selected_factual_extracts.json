@@ -1,0 +1,247 @@
+{
+  "note": "从本地历史tool_result选取；不是实时查询。仅保留与判断有关字段。",
+  "extracts": [
+    {
+      "label": "主会话风险跟踪写入返回",
+      "locator": "R1 L380",
+      "value": {
+        "ok": true,
+        "track": {
+          "id": "RT-001",
+          "project_name": "西安地铁四期三标段监测",
+          "content": "超支25万，要求项目负责人一周内提交纠偏方案，说明如何追回超支款项",
+          "assignee": "项目负责人",
+          "deadline": "2026-10-17",
+          "created_at": "2026-10-10 15:56:08"
+        }
+      }
+    },
+    {
+      "label": "主会话16:02读取返回",
+      "locator": "R1 L438",
+      "value": {
+        "ok": true,
+        "total": 1,
+        "tracks": [
+          {
+            "id": "RT-001",
+            "project_name": "西安地铁四期三标段监测",
+            "content": "超支25万，要求项目负责人一周内提交纠偏方案，说明如何追回超支款项",
+            "assignee": "项目负责人",
+            "deadline": "2026-10-17",
+            "created_at": "2026-10-10 15:56:08"
+          }
+        ]
+      }
+    },
+    {
+      "label": "即时巡检16:11读取返回",
+      "locator": "R2 L33",
+      "value": {
+        "ok": true,
+        "total": 0,
+        "tracks": []
+      }
+    },
+    {
+      "label": "补充协议后续查询",
+      "locator": "R3 L16",
+      "value": [
+        {
+          "id": "HT-2026-0007",
+          "customer_name": "秦川城建集团",
+          "project_name": "西安地铁四期三标段监测",
+          "amount_wan": 85,
+          "expire_date": "2026-09-10",
+          "status": "active",
+          "created_at": "2026-10-10 16:13:39",
+          "days_left": -33
+        }
+      ]
+    },
+    {
+      "label": "补充协议后续查询",
+      "locator": "R4 L29",
+      "value": [
+        {
+          "id": "HT-2026-0007",
+          "customer_name": "秦川城建集团",
+          "project_name": "西安地铁四期三标段监测",
+          "amount_wan": 85,
+          "expire_date": "2026-09-10",
+          "status": "active",
+          "created_at": "2026-10-10 16:13:39",
+          "days_left": -34
+        }
+      ]
+    },
+    {
+      "label": "补充协议后续查询",
+      "locator": "R5 L73",
+      "value": [
+        {
+          "id": "HT-2026-0007",
+          "customer_name": "秦川城建集团",
+          "project_name": "西安地铁四期三标段监测",
+          "amount_wan": 85,
+          "expire_date": "2026-09-10",
+          "status": "active",
+          "created_at": "2026-10-10 16:13:39",
+          "days_left": -34
+        }
+      ]
+    },
+    {
+      "label": "后续跟踪查询",
+      "locator": "R3 L20",
+      "value": {
+        "ok": true,
+        "total": 0,
+        "tracks": []
+      }
+    },
+    {
+      "label": "后续跟踪查询",
+      "locator": "R4 L33",
+      "value": {
+        "ok": true,
+        "total": 0,
+        "tracks": []
+      }
+    },
+    {
+      "label": "后续跟踪查询",
+      "locator": "R5 L71",
+      "value": {
+        "ok": true,
+        "total": 0,
+        "tracks": []
+      }
+    },
+    {
+      "label": "五条巡检日志",
+      "locator": "R5 L61",
+      "value": [
+        {
+          "time_utc8": "2026-10-14T09:10:37.326000+08:00",
+          "status": "ok",
+          "error": null,
+          "trigger": "scheduled",
+          "duration_ms": 69427
+        },
+        {
+          "time_utc8": "2026-10-13T09:11:17.121000+08:00",
+          "status": "ok",
+          "error": null,
+          "trigger": "scheduled",
+          "duration_ms": 53347
+        },
+        {
+          "time_utc8": "2026-10-12T09:00:00+08:00",
+          "status": "error",
+          "error": "Missed execution (reason: sleep, count: 1)",
+          "trigger": "scheduled",
+          "duration_ms": 0
+        },
+        {
+          "time_utc8": "2026-10-11T09:00:00+08:00",
+          "status": "error",
+          "error": "Missed execution (reason: too_late, count: 1)",
+          "trigger": "scheduled",
+          "duration_ms": 0
+        },
+        {
+          "time_utc8": "2026-10-10T16:11:13.402000+08:00",
+          "status": "ok",
+          "error": null,
+          "trigger": "tool",
+          "duration_ms": 67110
+        }
+      ]
+    },
+    {
+      "label": "完整群消息查询的时点与数量",
+      "locator": "R5 L69",
+      "value": {
+        "complete": true,
+        "hasMore": false,
+        "count": 6,
+        "times": [
+          "2026-10-14 09:11:38",
+          "2026-10-13 09:11:57",
+          "2026-10-10 16:12:09",
+          "2026-10-10 16:03:01",
+          "2026-10-10 15:56:23",
+          "2026-10-10 15:45:10"
+        ]
+      }
+    },
+    {
+      "label": "项目进度与成本字段",
+      "locator": "R1 L355",
+      "value": {
+        "ok": true,
+        "count": 2,
+        "projects": [
+          {
+            "name": "西安地铁四期三标段监测",
+            "contract_id": "HT-2025-0142",
+            "plan_progress": 60,
+            "actual_progress": 45,
+            "budget_wan": 315,
+            "used_wan": 340,
+            "risk_note": "滞后 15%、超支 25 万",
+            "overrun_wan": 25,
+            "lag_pct": 15,
+            "reason": "滞后计划 15%、超支 25 万"
+          },
+          {
+            "name": "榆商高速一标段勘察设计",
+            "contract_id": "HT-2025-0138",
+            "plan_progress": 75,
+            "actual_progress": 68,
+            "budget_wan": 300,
+            "used_wan": 260,
+            "risk_note": "轻微滞后 7%",
+            "overrun_wan": -40,
+            "lag_pct": 7,
+            "reason": "滞后计划 7%"
+          }
+        ]
+      }
+    },
+    {
+      "label": "客户查询实际字段",
+      "locator": "R1 L415",
+      "value": {
+        "ok": true,
+        "customer": {
+          "name": "秦川城建集团",
+          "total_projects": 5,
+          "total_amount_wan": 1560,
+          "highlight": "核心大客户，续签优先级最高"
+        },
+        "contracts": [
+          {
+            "id": "HT-2025-0142",
+            "customer_name": "秦川城建集团",
+            "project_name": "西安地铁四期三标段监测",
+            "amount_wan": 512,
+            "expire_date": "2026-09-08",
+            "status": "active",
+            "created_at": "2026-08-17 08:00:00"
+          }
+        ]
+      }
+    },
+    {
+      "label": "文档创建回读的字节数",
+      "locator": "R1 L280",
+      "value": {
+        "expectedBytes": 728,
+        "readbackBytes": 730,
+        "verified": true
+      }
+    }
+  ]
+}
