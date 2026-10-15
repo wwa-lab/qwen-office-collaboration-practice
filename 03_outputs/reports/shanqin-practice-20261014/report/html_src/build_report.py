@@ -24,6 +24,42 @@ sys.path.insert(0, str(SKILL / 'scripts'))
 import build
 import localization
 
+LOCALES = json.loads((HERE / 'report_locales.json').read_text())['translations']
+LANGUAGES = ('en', 'zh-Hans', 'zh-Hant')
+
+def translate_atom(value, language):
+    if language == 'zh-Hans':
+        return value
+    bundle = LOCALES[language]
+    if value in bundle:
+        return bundle[value]
+    if value.endswith('（续）'):
+        return translate_atom(value[:-3], language) + (' (cont.)' if language == 'en' else '（續）')
+    raise ValueError(f'Missing {language} translation: {value}')
+
+def translate_model(model, language):
+    result = copy.deepcopy(model)
+    result['title'] = translate_atom(result['title'], language)
+    for slide in result['slides']:
+        for field in ('title', 'section'):
+            slide[field] = translate_atom(slide[field], language)
+        for element in slide['elements']:
+            if 'paragraphs' in element:
+                for paragraph in element['paragraphs']:
+                    for run in paragraph['runs']:
+                        run['text'] = translate_atom(run['text'], language)
+                element['text'] = '\n'.join(''.join(r['text'] for r in p['runs']) for p in element['paragraphs'])
+            elif 'text' in element:
+                element['text'] = translate_atom(element['text'], language)
+            for field in ('alt', 'altText'):
+                if field in element:
+                    element[field] = translate_atom(element[field], language)
+            if 'rows' in element:
+                element['rows'] = [[translate_atom(cell, language) for cell in row] for row in element['rows']]
+        # These notes are the complete source content, as in the monolingual report.
+        slide['notes'] = '\n\n'.join(el.get('text', '\n'.join(' | '.join(r) for r in el.get('rows', []))) for el in slide['elements'])
+    return result
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -59,12 +95,26 @@ def text_element(identity, value, y, height, font=32, width=1440, x=80):
             'fontSize': font, 'color': '222222'}
 
 def text_height(value, font=32, width=1440):
-    lines = sum(max(1, math.ceil(units(plain(p)) / (width / font - 2))) for p in value.split('\n'))
-    return math.ceil(lines * font * 1.32 + 8)
+    versions = ['\n'.join(''.join(translate_atom(r['text'], lang) for r in p['runs']) for p in paragraphs(value)) for lang in LANGUAGES]
+    lines = max(sum(max(1, math.ceil(units(p) / (width / font - 2))) for p in text.split('\n')) for text in versions)
+    return math.ceil(lines * font * 1.32 + 12)
 
 source = OUT / '04_final_report.md'
 matrix = OUT / '02_evidence_matrix.md'
-lines = source.read_text().splitlines()
+image_manifest = json.loads((HERE / 'operational_image_manifest.json').read_text())
+source_text = source.read_text()
+# Markdown and HTML share the same figures and captions. Preserve source line
+# numbers while removing figure blocks from the prose pagination pass.
+for asset in image_manifest:
+    expected = (f"![{asset['caption']}]({asset['original']})\n\n"
+                f"**{asset['caption']}**\n\n{asset['source']}\n\n"
+                f"{asset['observation']}\n\n{asset['limit']} 对应：{asset['evidence']}。")
+    pattern = rf"<!-- screenshot:{asset['id']}:start -->\n(.*?)\n<!-- screenshot:{asset['id']}:end -->"
+    matches = list(re.finditer(pattern, source_text, re.S))
+    assert len(matches) == 1 and matches[0][1] == expected, asset['id']
+    source_text = re.sub(pattern, lambda m: '\n' * m[0].count('\n'), source_text, flags=re.S)
+assert '<!-- screenshot:' not in source_text
+lines = source_text.splitlines()
 blocks = []
 i = 0
 while i < len(lines):
@@ -98,7 +148,7 @@ theme = copy.deepcopy(next(t for t in build.CONFIG['themes'] if t['id'] == 'hk-t
 deck = {'version': 1, 'modelVersion': '1.1', 'id': 'shanqin-management-report-20261014-u3',
         'title': blocks[0]['text'], 'brand': copy.deepcopy(build.CONFIG['brand']), 'theme': theme,
         'slides': [], 'warnings': []}
-deck['brand']['footer'] = 'HK Technology · 内部管理讨论'
+deck['brand']['footer'] = 'HK Technology'
 coverage = []
 
 def add_slide(identity, title, section, elements, layout='content', notes=None):
@@ -178,7 +228,7 @@ for group in groups:
                 while True:
                     rows = [header, *pending[:count]]
                     cell_units = 1440 / len(header) / 26 - 2
-                    row_height = max(math.ceil(units(c) / cell_units) * 32 + 26 for row in rows for c in row)
+                    row_height = max(math.ceil(units(translate_atom(c, lang)) / cell_units) * 32 + 26 for row in rows for c in row for lang in LANGUAGES)
                     h = max(210, row_height * len(rows))
                     if h <= 550 or count == 1:
                         break
@@ -192,27 +242,29 @@ def cards_slide(identity, title, section, cards, source_text):
     elements = []
     for n, (head, body) in enumerate(cards):
         elements.append({'id': f'{identity}-card-{n}', 'type': 'shape', 'shape': 'rect',
-                         'x': 80 + (n % 2) * 740, 'y': 210 + (n // 2) * 220, 'w': 700, 'h': 190,
-                         'fontSize': 30, 'color': '222222', 'fill': 'F4F4F4', 'align': 'left',
+                         'x': 80 + (n % 2) * 740, 'y': 210 + (n // 2) * 255, 'w': 700, 'h': 240,
+                         'fontSize': 28, 'color': '222222', 'fill': 'F4F4F4', 'align': 'left',
                          'text': head + '\n\n' + body})
-    elements.append(text_element(identity + '-source', source_text, 690, 85, 26))
+    elements.append(text_element(identity + '-source', source_text, 715, 85, 26))
     return add_slide(identity, title, section, elements, 'comparison')
 
 # Actual operation results supplement the existing analysis without rewriting it.
 # Prior preparation-material images remain on disk, but are not shown in the body.
-image_manifest = json.loads((HERE / 'operational_image_manifest.json').read_text())
 for asset in image_manifest:
     identity = 'operation-photo-' + asset['id'].lower()
     crop_w, crop_h = asset['crop'][2:]
-    width = min(1440, 350 * crop_w / crop_h)
+    tall = crop_h / crop_w > .6
+    width = min(940 if tall else 1440, (560 if tall else 350) * crop_w / crop_h)
     height = width * crop_h / crop_w
     image_el = {'id': identity + '-image', 'type': 'image',
                 'src': str((OUT / asset['original']).resolve()),
                 'alt': asset['caption'], 'altText': asset['caption'] + '。' + asset['limit'],
                 'x': 80, 'y': 210, 'w': width, 'h': height, 'fit': 'contain'}
     caption = '**' + asset['caption'] + '**\n' + asset['source'] + '\n' + asset['observation'] + '\n' + asset['limit'] + ' 对应：' + asset['evidence'] + '。'
-    elements = [image_el, text_element(identity + '-caption', caption, 590, 210, 23)]
-    slide = add_slide(identity, asset['title'], '三 典型场景分析', elements)
+    elements = [image_el, text_element(identity + '-caption', caption,
+                210 if tall else 590, 560 if tall else 210, 23,
+                width=540 if tall else 1440, x=980 if tall else 80)]
+    slide = add_slide(identity, asset['title'], asset.get('section', '三 典型场景分析'), elements)
     deck['slides'].remove(slide)
     at = next(i for i, s in enumerate(deck['slides']) if s['id'] == asset['anchor'])
     deck['slides'].insert(at + 1, slide)
@@ -258,8 +310,11 @@ for index, row in enumerate(evidence_rows):
     assert y < 802, (identity, y)
     add_slide(identity, row[0] + ' · ' + evidence_titles[index], '证据详情 E01–E24', elements)
 
-deck['i18n'] = {'version': 1, 'defaultLanguage': 'zh-Hans', 'language': 'zh-Hans',
-                'translations': {'zh-Hans': localization.fields(deck)}, 'stale': {}}
+source_deck = copy.deepcopy(deck)
+projections = {lang: translate_model(source_deck, lang) for lang in LANGUAGES}
+deck = projections['en']
+deck['i18n'] = {'version': 1, 'defaultLanguage': 'en', 'language': 'en',
+                'translations': {lang: localization.fields(projections[lang]) for lang in LANGUAGES}, 'stale': {}}
 deck = build.normalize(deck, SKILL / 'assets/themes')
 html_text = build.render_html(deck, view='report')
 extra_css = (HERE / 'report.css').read_text()
@@ -283,7 +338,6 @@ assert app_src.count(save_return) == 1
 patched_app = app_src.replace(save_return, "    copy.querySelectorAll('[style]').forEach(node=>node.removeAttribute('style'));\n" + save_return)
 html_text = html_text.replace(app_src, extra_js + '\n;\n' + patched_app)
 html_text = html_text.replace('</style>', '\n' + extra_css + '\n</style>', 1)
-html_text = html_text.replace('<html lang="en-GB">', '<html lang="zh-CN">')
 
 # Keep JSON fields on separate lines for review and precise secret-scan exceptions.
 # Parsed values are unchanged, including the embedded image bytes.
@@ -304,7 +358,7 @@ csp = "default-src 'none'; script-src " + ' '.join(js_hashes) + '; style-src ' +
 html_text = re.sub(r'(<meta http-equiv="Content-Security-Policy" content=")[^"]*(">)', lambda m: m[1] + csp + m[2], html_text)
 
 # Content completeness covers visible text and table cells, never hidden notes.
-visible = '\n'.join([deck['title'], *[s['title'] + '\n' + s['section'] + '\n' + '\n'.join(el.get('text', '\n'.join(' | '.join(r) for r in el.get('rows', []))) for el in s['elements']) for s in deck['slides']]])
+visible = '\n'.join([source_deck['title'], *[s['title'] + '\n' + s['section'] + '\n' + '\n'.join(el.get('text', '\n'.join(' | '.join(r) for r in el.get('rows', []))) for el in s['elements']) for s in source_deck['slides']]])
 canonical = lambda v: re.sub(r'\s+', '', plain(v))
 missing = []
 for b in blocks:
@@ -325,7 +379,8 @@ assert not [r for r in refs if re.match(r'https?://|file:|/Users/', r)]
 (OUT / '04_final_report.html').write_text(html_text)
 record = {'report_source': source.name, 'report_sha256': digest(source), 'matrix_source': matrix.name,
           'matrix_sha256': digest(matrix), 'theme': 'hk-technology', 'default_view': 'report',
-          'language': 'zh-Hans', 'slides': len(deck['slides']), 'evidence_items': 24,
+          'language': 'en', 'languages': list(LANGUAGES), 'translation_fields_per_language': len(localization.fields(deck)),
+          'locales_sha256': digest(HERE/'report_locales.json'), 'slides': len(deck['slides']), 'evidence_items': 24,
           'source_blocks': len(blocks), 'missing_content': missing, 'mapping': coverage,
           'published_images': [{key:a[key] for key in ('id','sha256','original','source_sha256','source_crop','capture_date')} for a in image_manifest],
           'skill_version': '1.3.0', 'html_sha256': digest(OUT / '04_final_report.html')}

@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "date": "2026-10-15",
+  "source_language": "zh-Hans",
+  "translation_language": "en",
+  "scope": "English reading editions of all 14 non-README Markdown documents in the public archive. Chinese originals are unchanged. Historical claims remain attributed and are not new acceptance evidence.",
+  "maintenance": "Review the English edition when its source changes; update fingerprints only after reconciliation. The full report is generated from the reviewed HTML translation catalog.",
+  "files": [
+    {
+      "source": "千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md",
+      "english": "original_report_draft_EN.md",
+      "source_sha256": "e8aece7975cb06069e1cdbf9d6193389f9407a90b82c47ff74cb035d982a30be",
+      "english_sha256": "30864d9f07bbedfe3949b381437fb8b6bec8eb93f31d2d6de72293220eb328a0",
+      "nature": "historical_source_translation"
+    },
+    {
+      "source": "实践素材与事实清单-2026-10-14.md",
+      "english": "practice_materials_and_facts_EN.md",
+      "source_sha256": "7e6cc512d638374d4e37d71a543a0dd7a143d17cac819009dfd4cf3ad8e9c833",
+      "english_sha256": "e187a3a804c097c2972fa4411795bb5f2d6b7e769c4c3efee4e9bee65aa95602",
+      "nature": "historical_source_translation"
+    },
+    {
+      "source": "核心发现与管理启示-2026-10-14.md",
+      "english": "original_key_findings_EN.md",
+      "source_sha256": "c4b89fe35ea0a08d8d8d10b54d5b0bec60c6ca70c717f18030238eccf8e0f5da",
+      "english_sha256": "839506437b5b3876ec291ea23895d063683aaecd2ef7c492d6e455df176ba2d3",
+      "nature": "historical_source_translation"
+    },
+    {
+      "source": "report/01_material_inventory.md",
+      "english": "report/01_material_inventory_EN.md",
+      "source_sha256": "4a706aa8047476804bf337fd706835b8d42bcf692caa71b9122d916691bc1329",
+      "english_sha256": "7279ee69a9dd0287ca5cfeae7de1d8cf52d26e4fb168408c9fe038b1f58edadd",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/02_evidence_matrix.md",
+      "english": "report/02_evidence_matrix_EN.md",
+      "source_sha256": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
+      "english_sha256": "5b8e7154dfb1a2dad8eb5233dbaf83826c04274d4a4dad1b3a7ec2a157c287d5",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/03_management_analysis.md",
+      "english": "report/03_management_analysis_EN.md",
+      "source_sha256": "94b44ab2fa45c9a8411d76273b7b1c78b36e652eb60c2542ee987a88b9f90bd6",
+      "english_sha256": "1a7286dc244d8082a19cfe6d3ac700125405e55e9c81db45529f1e5daede4cb3",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/04_final_report.md",
+      "english": "report/04_final_report_EN.md",
+      "source_sha256": "dc91f2706186f9b8d23cf85c4a2466a22655ec44906188defb5f3ac8b49e5580",
+      "english_sha256": "49ee21732108571140dc2a8ddb4b8c9f65dacd7aca36e085e9a5f35506591afe",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/05_open_questions.md",
+      "english": "report/05_open_questions_EN.md",
+      "source_sha256": "1801fa8012aa58d0cbb69967927844ee24df3ddfabcd6a8744a6e3263af1c5a2",
+      "english_sha256": "a562421f037d213380dbb0c95e87fb7c9a68cdb45abdad8c3f5e0bfb762c4e5a",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/06_html_readme.md",
+      "english": "report/06_html_readme_EN.md",
+      "source_sha256": "ea063b4a46b5e4fe899bcd19800a26d934f147c8dc48edc2acb4b971a3981341",
+      "english_sha256": "b61df5483634f39e218aaae82620b11c94f86014848f64e400f032276617323a",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/07_operational_screenshot_evidence.md",
+      "english": "report/07_operational_screenshot_evidence_EN.md",
+      "source_sha256": "4de4c10b01d903733e2ec424d90500eda3eabc1b1c77f7c1a73a6e35647f422c",
+      "english_sha256": "81f0907d1aae5737ef125d600af42ccce17145b8e49cbb230c1d0ef6de7ece6d",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/evidence/record_index.md",
+      "english": "report/evidence/record_index_EN.md",
+      "source_sha256": "8f104d37b730b328b12cf4786b464d1aca0d9f8737cd077cdb4e9ead14339255",
+      "english_sha256": "96a1a3b91ba7bc24adaefa35cd02c2194eb16db19f056b351321d0443aa5b39b",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "report/evidence/file_catalog.md",
+      "english": "report/evidence/file_catalog_EN.md",
+      "source_sha256": "6ae6a784033a54ef67be571ae478a14cddaab182f5f1c598a0338e8244cae47c",
+      "english_sha256": "867ab23123903af50639c48f9a545e1b0a31f67c9f7ad11520e79ced51b83294",
+      "nature": "current_document_translation"
+    },
+    {
+      "source": "source_materials/陕秦三端联动演示复盘-2026-10-10.md",
+      "english": "source_materials/demo_recap_EN.md",
+      "source_sha256": "fb4733350033d2bb3ae372fb838316e111e9c4474cc607d0e5b6db68fdb0b82c",
+      "english_sha256": "cbdb7e9c96c93d18c425bdefafa02cd6567b6e1e3775dd03007aada5d1452f28",
+      "nature": "historical_source_translation"
+    },
+    {
+      "source": "source_materials/补充协议.md",
+      "english": "source_materials/supplementary_agreement_EN.md",
+      "source_sha256": "ae4c53f946f88f375c029f3f2e32c00ea9c5f149ee44fb1418c32813f0db6f91",
+      "english_sha256": "e322ea27cd5728d46cb233075ce9c30a8be4c1ed9951b68abc888963dfb951f6",
+      "nature": "historical_source_translation"
+    }
+  ]
+}

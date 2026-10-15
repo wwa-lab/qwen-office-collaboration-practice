@@ -1,13 +1,23 @@
 {
   "date": "2026-10-15",
   "status": "static_checks_passed",
-  "html_sha256": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225",
+  "html_sha256": "26dd4699f8babc6694477ab12b495790cca1d05dcc691f495d88393307b78510",
   "theme": "hk-technology",
   "default_view": "report",
-  "slides": 54,
+  "slides": 74,
   "source_blocks": 69,
   "evidence_items": 24,
   "images": [
+    {
+      "id": "UI-06",
+      "sha256": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
+      "pixels": [
+        1512,
+        1081
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "body-02-2"
+    },
     {
       "id": "UI-01",
       "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
@@ -19,6 +29,16 @@
       "after": "body-03-1"
     },
     {
+      "id": "UI-04",
+      "sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+      "pixels": [
+        1512,
+        400
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "body-04-1"
+    },
+    {
       "id": "UI-02",
       "sha256": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
       "pixels": [
@@ -26,7 +46,7 @@
         970
       ],
       "embedded_excerpt_matches": true,
-      "after": "body-04-1"
+      "after": "operation-photo-ui-04"
     },
     {
       "id": "UI-03",
@@ -37,56 +57,132 @@
       ],
       "embedded_excerpt_matches": true,
       "after": "body-05-1"
+    },
+    {
+      "id": "UI-05",
+      "sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+      "pixels": [
+        1512,
+        400
+      ],
+      "embedded_excerpt_matches": true,
+      "after": "operation-photo-ui-03"
     }
   ],
-  "full_original_screenshots_embedded": false,
-  "relative_links_checked": 46,
+  "relative_links_checked": 332,
   "bundled_source_hashes_verified": 5,
   "scripts_syntax_checked": 2,
   "csp_hashes_verified": true,
   "external_resource_references": 0,
-  "public_files": 32,
+  "public_files": 71,
   "ecc_aws_false_positives": {
     "count": 2,
     "png_sha256": "b93109ee0088041ae853a4e15dce5fd895d823f6134a725d7ce8213b2d821035",
     "scope": "exact contentLogo data URI lines only"
   },
   "not_verified": [
-    "browser visual layout",
-    "browser interaction and save/reopen",
-    "PDF print pagination"
+    "file:// opening: browser policy prevented testing; loopback preview used",
+    "actual browser download delivery",
+    "PDF print pagination",
+    "full editor regression",
+    "PowerPoint application rendering and New Slide UI",
+    "Native export triggered from edited browser QA model remained pending; supplied exports validated separately through the native export component"
   ],
   "files_sha256": {
-    ".gitignore": "4be6d7fedd8f18b14c6b29b4afc629927a297830729df943fb33779b5e55f132",
-    "README.md": "59b92c25401ba721eacbdd5e4d59123e63834e0f16d5f528efa2cd490f04f37f",
-    "publication_files.json": "651eb5ed8d4af3d9e1591d210e1e517e4a11d0b499002e3556e51dbce176979c",
+    ".gitignore": "abe565fa8d3a6df6a519653c8878ac7dae6f9d9f15909d91d47e79b1d31c2311",
+    "README.md": "2bec62b1f46375c3b5889d2326dd67c389ebd240713e7ebaac8066508a3b87af",
+    "README.zh-Hans.md": "00d5d9188016d62d0079644f97f43572e8ad25118b626f6fa93fa87d3b13a7cd",
+    "README.zh-Hant.md": "8df2657229746a3feaf14375e38e8d6ec7b9a773efb69648a15ec27b43268785",
+    "original_key_findings_EN.md": "839506437b5b3876ec291ea23895d063683aaecd2ef7c492d6e455df176ba2d3",
+    "original_report_draft_EN.md": "30864d9f07bbedfe3949b381437fb8b6bec8eb93f31d2d6de72293220eb328a0",
+    "practice_materials_and_facts_EN.md": "e187a3a804c097c2972fa4411795bb5f2d6b7e769c4c3efee4e9bee65aa95602",
+    "publication_files.json": "b891bc1cacad6079f45fedaf92b8045d321662421a62a766ec383287c844dccd",
     "report/01_material_inventory.md": "4a706aa8047476804bf337fd706835b8d42bcf692caa71b9122d916691bc1329",
+    "report/01_material_inventory_EN.md": "7279ee69a9dd0287ca5cfeae7de1d8cf52d26e4fb168408c9fe038b1f58edadd",
     "report/02_evidence_matrix.md": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
+    "report/02_evidence_matrix_EN.md": "5b8e7154dfb1a2dad8eb5233dbaf83826c04274d4a4dad1b3a7ec2a157c287d5",
     "report/03_management_analysis.md": "94b44ab2fa45c9a8411d76273b7b1c78b36e652eb60c2542ee987a88b9f90bd6",
-    "report/04_final_report.html": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225",
-    "report/04_final_report.md": "72e5960c8203fa6a69f9a75c76e289f2ea612dad85aa186418cc4778b2823bde",
+    "report/03_management_analysis_EN.md": "1a7286dc244d8082a19cfe6d3ac700125405e55e9c81db45529f1e5daede4cb3",
+    "report/04_final_report.html": "26dd4699f8babc6694477ab12b495790cca1d05dcc691f495d88393307b78510",
+    "report/04_final_report.md": "dc91f2706186f9b8d23cf85c4a2466a22655ec44906188defb5f3ac8b49e5580",
+    "report/04_final_report_EN.md": "49ee21732108571140dc2a8ddb4b8c9f65dacd7aca36e085e9a5f35506591afe",
+    "report/04_final_report_EN.potx": "5613c2689a75f355baf423a65d1ffaeae612d3dec915cd9bfd54141ab009e461",
+    "report/04_final_report_EN.pptx": "4f2c7f9517c1d744d6065c47b7b874709c8f7e4202a63caa04c1eac20c2e22f0",
+    "report/04_final_report_SC.pptx": "581a5be2530740fdab7150a715886b42b557e9ba6764a6593dbf32ed9db438b3",
+    "report/04_final_report_TC.pptx": "f96a5e786161cf6f730b8db8852c8886ca0771ab8c7a975b058af80d6dd8348a",
     "report/05_open_questions.md": "1801fa8012aa58d0cbb69967927844ee24df3ddfabcd6a8744a6e3263af1c5a2",
-    "report/06_html_readme.md": "246e72ea2ba7f4a312c11c89d03fd7a9ed239837506ab0e0fd311b2a3a9cc036",
-    "report/07_operational_screenshot_evidence.md": "32255937932df21d5b799824abb5f417d05d25b190858e0d2ca49cb16d41fabc",
+    "report/05_open_questions_EN.md": "a562421f037d213380dbb0c95e87fb7c9a68cdb45abdad8c3f5e0bfb762c4e5a",
+    "report/06_html_readme.md": "ea063b4a46b5e4fe899bcd19800a26d934f147c8dc48edc2acb4b971a3981341",
+    "report/06_html_readme_EN.md": "b61df5483634f39e218aaae82620b11c94f86014848f64e400f032276617323a",
+    "report/07_operational_screenshot_evidence.md": "4de4c10b01d903733e2ec424d90500eda3eabc1b1c77f7c1a73a6e35647f422c",
+    "report/07_operational_screenshot_evidence_EN.md": "81f0907d1aae5737ef125d600af42ccce17145b8e49cbb230c1d0ef6de7ece6d",
+    "report/08_management_brief.html": "1f8bec2f96996b75dfcebf92699a6592e957e30a08160c03c19f2ed812637bdf",
+    "report/08_management_brief_EN.potx": "99af6a90ec99aa2518381355e6773a8550d317a0c29067148154968b70d7ea5c",
+    "report/08_management_brief_EN.pptx": "5b19f4796219b8cf4c302b81a135f092c8e6ba3ed5600e9fd9fdd8c97dafc771",
+    "report/08_management_brief_SC.pptx": "3142e92e0f6c5d689793804c4d1ec4d4df347e6e41523942afbf867e98d46493",
+    "report/08_management_brief_TC.pptx": "fd6bd79b28b66a8471e48d57af149c6d6eb62121522d43a39672d8403bc51cac",
     "report/assets/published/ui-01.png": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
     "report/assets/published/ui-02.png": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a",
     "report/assets/published/ui-03.png": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf",
+    "report/assets/published/ui-04.jpg": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+    "report/assets/published/ui-05.jpg": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+    "report/assets/published/ui-06.jpg": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
     "report/evidence/file_catalog.md": "6ae6a784033a54ef67be571ae478a14cddaab182f5f1c598a0338e8244cae47c",
+    "report/evidence/file_catalog_EN.md": "867ab23123903af50639c48f9a545e1b0a31f67c9f7ad11520e79ced51b83294",
     "report/evidence/record_index.md": "8f104d37b730b328b12cf4786b464d1aca0d9f8737cd077cdb4e9ead14339255",
+    "report/evidence/record_index_EN.md": "96a1a3b91ba7bc24adaefa35cd02c2194eb16db19f056b351321d0443aa5b39b",
     "report/evidence/selected_factual_extracts.json": "92c451c313ec10ba1b2851ee6489f5ac099f585bb46c090e007d3917db1e271a",
     "report/evidence/source_manifest.json": "bce62155dafb66c5431f3c62479fbfd3194a7997c7bcde904835c75fde390c93",
     "report/html_src/build_dependencies.json": "865e1c34ac65e1d76ff7bbe42a112c71968d637acc5754f86d23b01fc5fe38eb",
-    "report/html_src/build_report.py": "75d9601d8738a67bd815b8dc4ed583193aaddb73d33f049d241ff42dcdc13882",
-    "report/html_src/content_map.json": "646b87c84cabacc75f3dbd8bba5ecb2a8bf060b163d0a2b4d0db0d0deb3b34df",
-    "report/html_src/operational_image_manifest.json": "bf5b59ec5d95eec805682d907fb483060b4a5f38ed8ce7dab2e380c7ac25b40f",
-    "report/html_src/report.css": "71346fa00f49c6332451007c033c932358f8ed1f8b9c922c1d182ef3f4ba64ef",
-    "report/html_src/report.js": "7431afa86d7c6b9e9965511f0aee6b211654f52010cddf657aa627552053afe6",
-    "report/qa/verify_archive.py": "6ff81e77b2379d7740e195a3bc6df830b531ea436d3d94f48a4b7842f68b41f3",
-    "source_materials/README.md": "600a2b9ee26625200bbc72436eac8238c656aeb7e2381a7a45d8a8fb13c015ff",
+    "report/html_src/build_english_report.py": "05db1e1517c7c7396049152d53edfa86dc23229a0af991ac14bd533981caaa44",
+    "report/html_src/build_management_brief.py": "f8304833aba1f10fe6b03aec2f01b425f4a3a87bd12bcd5c9e4117ccc1e06306",
+    "report/html_src/build_report.py": "51b3746afb1d8970e62b6446e20ada001f2f70724b9091453e2c1ca2829a98c1",
+    "report/html_src/content_map.json": "93fd55803c2b97bbcc8473d6865cc72fe413d3751d86a2d43d0623e7e2a09c18",
+    "report/html_src/management_brief_model.json": "e64460ca46c57874a6fe9d56e69e40fb64e55d4a910c1034bc453c5da53b19ac",
+    "report/html_src/markdown_translations.json": "4132c4d781fc59c578288a3455afb8cba4e9b68f9c9e9b574014f6a81976dd58",
+    "report/html_src/operational_image_manifest.json": "b59c63a1502b53fac821f0d849f47609015ae960b5c4ee89af115986a1d7d938",
+    "report/html_src/report.css": "daf8d0ec84665824c81292b21328f9609aa24efbdc9875e371cb3ee301930c12",
+    "report/html_src/report.js": "9496010162eedc26713f0e9c9852474d54ecc4e986241bcee3234a8180eef493",
+    "report/html_src/report_locales.json": "198822ca425f0043e2da5c4e5e2966cd60896644deafaae368fd8651fb48b1e1",
+    "report/qa/browser_checks.json": "e25dfaa4a001cc56a08af2aae83d2728491fd693d7223d932c03585c0168d646",
+    "report/qa/management_brief_checks.json": "94078e56493c89e5d47b8e027032d488cb354a4cab55eb0bfeace62ac8d4e76e",
+    "report/qa/verify_archive.py": "9e3c01bffdb7f14c65aebbc00c5c403fb80c8aa4e1267c87d7a1c6100a49df6b",
+    "report/qa/verify_management_brief.py": "d421a2e554b157e2ce97ee5b5342485d1a29c2c01c970648600c3a5986a3b317",
+    "report/qa/verify_report_exports.py": "fe89ef5bb380e98d61dcf4ef583cee5e3b63e3473176eb464ba3942b40af33ff",
+    "source_materials/README.md": "d4500afe1a55c935585e7dc25cdb48697e2b90ba507f3c402e960e9a0d081587",
+    "source_materials/README.zh-Hans.md": "6ea3864f09f9985d14a716790072bca98f2c43738ca8a2609c77db8cb5c62502",
+    "source_materials/README.zh-Hant.md": "643923532777a670e8801ee44651f7b1329dae6ff7ee4180eee911f578ad6a7e",
+    "source_materials/demo_recap_EN.md": "cbdb7e9c96c93d18c425bdefafa02cd6567b6e1e3775dd03007aada5d1452f28",
+    "source_materials/supplementary_agreement_EN.md": "e322ea27cd5728d46cb233075ce9c30a8be4c1ed9951b68abc888963dfb951f6",
     "source_materials/补充协议.md": "ae4c53f946f88f375c029f3f2e32c00ea9c5f149ee44fb1418c32813f0db6f91",
     "source_materials/陕秦三端联动演示复盘-2026-10-10.md": "fb4733350033d2bb3ae372fb838316e111e9c4474cc607d0e5b6db68fdb0b82c",
     "千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md": "e8aece7975cb06069e1cdbf9d6193389f9407a90b82c47ff74cb035d982a30be",
     "实践素材与事实清单-2026-10-14.md": "7e6cc512d638374d4e37d71a543a0dd7a143d17cac819009dfd4cf3ad8e9c833",
     "核心发现与管理启示-2026-10-14.md": "c4b89fe35ea0a08d8d8d10b54d5b0bec60c6ca70c717f18030238eccf8e0f5da"
-  }
+  },
+  "management_brief_checks": "management_brief_checks.json",
+  "markdown_translations": {
+    "pairs": 14,
+    "source_and_english_fingerprints_verified": true,
+    "english_report_matches_reviewed_catalog": true,
+    "six_screenshot_paths_preserved": true
+  },
+  "readme_languages": {
+    "default": "en",
+    "available": [
+      "en",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "entry_points": 3,
+    "files_checked": 9,
+    "root_readme_sha256": {
+      "README.md": "7b8c3df881c9e92d862eee9a759f77150ec0e964a812118718fbcb10772dec99",
+      "README.zh-Hans.md": "f4ce12e4dbdadbbc277246c043cd076d138a4df372f509f59034bfd16b1e8f7a",
+      "README.zh-Hant.md": "21902e736dc149e6f5c0fac2d0931c6f558fa2123fd293d68f8c3aa09525ea52"
+    }
+  },
+  "browser_checks": "browser_checks.json",
+  "private_full_window_screenshots_embedded": false,
+  "direct_browser_screenshots": 3
 }

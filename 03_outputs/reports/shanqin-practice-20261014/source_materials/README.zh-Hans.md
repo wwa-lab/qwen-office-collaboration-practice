@@ -1,0 +1,12 @@
+# Source Materials
+
+[English](README.md) · **简体中文** · [繁體中文](README.zh-Hant.md)
+
+这两份文件从原千问工作目录复制，字节内容及 SHA-256 保持不变。它们提供实践背景和输入材料，不是独立测试结论。两份材料均附英文译本；中文原件保持不变，译文不作为新增证据。
+
+| 编号 | 文件 | 性质与使用边界 |
+| --- | --- | --- |
+| M4 | [陕秦三端联动演示复盘](陕秦三端联动演示复盘-2026-10-10.md) / [英文译本](demo_recap_EN.md) | 当日 AI 生成的复盘；“七项全部验证”“完整闭环”“第七天修复”等结论不能直接采用，具体核验见证据矩阵 |
+| M5 | [补充协议](补充协议.md) / [英文译本](supplementary_agreement_EN.md) | 按演示模板生成的模拟协议，非真实客户合同原件；用于字段提取及台账对照 |
+
+最新判断见 [正式报告](../report/04_final_report.md) / [英文](../report/04_final_report_EN.md) 和 [证据矩阵](../report/02_evidence_matrix.md)，原始指纹见 [来源清单](../report/evidence/source_manifest.json)。

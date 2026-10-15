@@ -1,0 +1,522 @@
+{
+  "date": "2026-10-15",
+  "html_sha256": "26dd4699f8babc6694477ab12b495790cca1d05dcc691f495d88393307b78510",
+  "environment": "macOS / existing Chrome via CUA / 127.0.0.1 preview",
+  "checks": {
+    "default_language": "en",
+    "default_view": "report",
+    "languages": [
+      "en",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "report_viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "layout_combinations": [
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "en",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "en",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "zh-Hans",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "zh-Hans",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "zh-Hant",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1280,
+          "height": 720
+        },
+        "lang": "zh-Hant",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "en",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "en",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "zh-Hans",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "zh-Hans",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "zh-Hant",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1366,
+          "height": 768
+        },
+        "lang": "zh-Hant",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "en",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "en",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "zh-Hans",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "zh-Hans",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "zh-Hant",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "lang": "zh-Hant",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "en",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "en",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "zh-Hans",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "zh-Hans",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "zh-Hant",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 1024,
+          "height": 768
+        },
+        "lang": "zh-Hant",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "en",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "en",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "zh-Hans",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "zh-Hans",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "zh-Hant",
+        "mode": "report",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      },
+      {
+        "size": {
+          "width": 390,
+          "height": 844
+        },
+        "lang": "zh-Hant",
+        "mode": "slides",
+        "languageVisible": true,
+        "loaded": 6,
+        "overflow": [],
+        "pageOverflow": false,
+        "reportOverflow": false
+      }
+    ],
+    "all_six_images_loaded": true,
+    "language_picker_visible_in_read_mode": true,
+    "e04_open_and_return_reference": "passed in English; returned to page 2",
+    "visual_inspection": [
+      "English desktop cover",
+      "Traditional Chinese 390px report",
+      "Simplified Chinese desktop cover"
+    ],
+    "save_reopen": {
+      "status": "passed_with_test_transport",
+      "detail": "Native HTML serializer in a QA copy; bytes captured locally without a browser download. Reopening preserved Traditional Chinese and an edited title. Switching to English showed the original English title; switching back retained the Traditional Chinese edit. English and Simplified Chinese were marked stale after the edit."
+    },
+    "console_errors": []
+  },
+  "not_verified": [
+    "file:// opening: browser policy prevented testing; loopback preview used",
+    "actual browser download delivery",
+    "PDF print pagination",
+    "full editor regression",
+    "PowerPoint application rendering and New Slide UI",
+    "Native export triggered from edited browser QA model remained pending; supplied exports validated separately through the native export component"
+  ],
+  "proof_image_sha256": "c8eb5546ae084ea5d92a5ff215259be6298ca444cf0d2d0a69d72be0cb962845",
+  "native_exports": {
+    "method": "Unmodified skill export component in a local Node VM with native canvas; OOXML validation",
+    "files": [
+      {
+        "file": "04_final_report_EN.pptx",
+        "sha256": "4f2c7f9517c1d744d6065c47b7b874709c8f7e4202a63caa04c1eac20c2e22f0",
+        "language": "en",
+        "slides": 74,
+        "notes": 74,
+        "native_pictures": 6,
+        "native_text_shapes": 365,
+        "native_tables": 10,
+        "text_notes_and_original_images_match": true,
+        "internal_relationships_resolve": true,
+        "content_layout_has_placeholders_and_brand": true
+      },
+      {
+        "file": "04_final_report_SC.pptx",
+        "sha256": "581a5be2530740fdab7150a715886b42b557e9ba6764a6593dbf32ed9db438b3",
+        "language": "zh-Hans",
+        "slides": 74,
+        "notes": 74,
+        "native_pictures": 6,
+        "native_text_shapes": 365,
+        "native_tables": 10,
+        "text_notes_and_original_images_match": true,
+        "internal_relationships_resolve": true,
+        "content_layout_has_placeholders_and_brand": true
+      },
+      {
+        "file": "04_final_report_TC.pptx",
+        "sha256": "f96a5e786161cf6f730b8db8852c8886ca0771ab8c7a975b058af80d6dd8348a",
+        "language": "zh-Hant",
+        "slides": 74,
+        "notes": 74,
+        "native_pictures": 6,
+        "native_text_shapes": 365,
+        "native_tables": 10,
+        "text_notes_and_original_images_match": true,
+        "internal_relationships_resolve": true,
+        "content_layout_has_placeholders_and_brand": true
+      },
+      {
+        "file": "04_final_report_EN.potx",
+        "sha256": "5613c2689a75f355baf423a65d1ffaeae612d3dec915cd9bfd54141ab009e461",
+        "language": "en",
+        "slides": 74,
+        "notes": 74,
+        "native_pictures": 6,
+        "native_text_shapes": 365,
+        "native_tables": 10,
+        "text_notes_and_original_images_match": true,
+        "internal_relationships_resolve": true,
+        "content_layout_has_placeholders_and_brand": true
+      },
+      {
+        "file": "qa-report-new-slide.pptx",
+        "sha256": "7a7595153f9b39e088b763bbef08f91e8f3d78d7c9dfec172d18e4ad1b37369c",
+        "language": "en",
+        "slides": 75,
+        "notes": 75,
+        "native_pictures": 6,
+        "native_text_shapes": 365,
+        "native_tables": 10,
+        "text_notes_and_original_images_match": true,
+        "internal_relationships_resolve": true,
+        "content_layout_has_placeholders_and_brand": true
+      }
+    ],
+    "new_slide_layout_inheritance": true,
+    "office_ui_verified": false
+  }
+}

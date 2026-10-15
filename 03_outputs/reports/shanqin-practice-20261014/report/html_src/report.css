@@ -2,7 +2,7 @@
 body{display:flex;flex-direction:column}
 #toolbar,#navigation{flex-shrink:0}
 #workspace{flex:1;min-height:0;height:auto}
-body:not(.editing) #toolbar > :is(#notes-toggle,#presenter,#qa,#fullscreen,.motion,.language-picker,#export,#template,#help),
+body:not(.editing) #toolbar > :is(#notes-toggle,#presenter,#qa,#fullscreen,.motion,#export,#template,#help),
 body:not(.editing) #toolbar > label:has(#theme-select){display:none!important}
 body.report-mode:not(.editing) .report-edit-section{display:none}
 #toolbar{min-height:56px;height:auto;padding:10px 22px;flex-wrap:wrap}
@@ -86,7 +86,7 @@ body.report-mode #navigation #page-number{font-size:11px}
 @media print{
  :root,body,#workspace{background:#fff!important}
  @page{size:A4 portrait;margin:15mm 14mm 16mm;
-   @bottom-left{content:"HK Technology · 内部管理讨论";font:8pt Arial;color:#666}
+   @bottom-left{content:"HK Technology";font:8pt Arial;color:#666}
    @bottom-right{content:counter(page) " / " counter(pages);font:8pt Arial;color:#666}
  }
  html,body,body.report-mode,#workspace{height:auto!important;overflow:visible!important;display:block!important}

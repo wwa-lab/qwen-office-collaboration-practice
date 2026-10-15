@@ -8,7 +8,11 @@ report/html_src/image_manifest.json
 # Old QA contains fonts, renders, duplicated HTML/PDF, and local session tools.
 report/qa/*
 !report/qa/verify_archive.py
+!report/qa/verify_report_exports.py
+!report/qa/verify_management_brief.py
 !report/qa/archive_checks.json
+!report/qa/browser_checks.json
+!report/qa/management_brief_checks.json
 __pycache__/
 *.pyc
 .DS_Store

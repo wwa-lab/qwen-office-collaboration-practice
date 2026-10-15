@@ -1,0 +1,261 @@
+{
+  "date": "2026-10-15",
+  "skill": "corporate-web-slides",
+  "skill_version": "1.3.0",
+  "renderer": "build.render_html(deck, view=\"report\")",
+  "default_view": "report",
+  "default_language": "en",
+  "languages": [
+    "en",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "sections": 17,
+  "translation_fields_per_language": 114,
+  "model_source": "management_brief_model.json",
+  "model_sha256": "e64460ca46c57874a6fe9d56e69e40fb64e55d4a910c1034bc453c5da53b19ac",
+  "html_sha256": "1f8bec2f96996b75dfcebf92699a6592e957e30a08160c03c19f2ed812637bdf",
+  "report_sha256": "dc91f2706186f9b8d23cf85c4a2466a22655ec44906188defb5f3ac8b49e5580",
+  "matrix_sha256": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
+  "images": [
+    {
+      "id": "UI-04",
+      "original": "assets/published/ui-04.jpg",
+      "sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2"
+    },
+    {
+      "id": "UI-02",
+      "original": "assets/published/ui-02.png",
+      "sha256": "9f73a68a3fb682b4e5896f6e09e7726a2174ccb5ed5a18992501302d3589b25a"
+    },
+    {
+      "id": "UI-01",
+      "original": "assets/published/ui-01.png",
+      "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2"
+    },
+    {
+      "id": "UI-03",
+      "original": "assets/published/ui-03.png",
+      "sha256": "c5ae9fd85be116ed96931b2542cd8878c6f39e937e4f30da130ab484a3db23cf"
+    },
+    {
+      "id": "UI-05",
+      "original": "assets/published/ui-05.jpg",
+      "sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970"
+    }
+  ],
+  "standalone": true,
+  "scripts_syntax_checked": 2,
+  "native_skill_renderer_unmodified": true,
+  "build_dependencies": {
+    "assets/app.js": "ce0399edea66afee3a1ce5cb7871bc448a7eef67a18dc98afa0d32a580af5aa0",
+    "assets/brands/hsbc/brand.json": "87c396045a742da4610a47e871864a01b1ea14f6cc6d065b60d6c0fc40bffa1d",
+    "assets/contracts.json": "0be53c8c2410ebf851b0431454dcb48aa1bb9f223015529dcf7cc27d7bc07cc0",
+    "assets/editor.js": "f851a7d823383018331bd878657be2b5531696a7f684dc530acf2174769ca325",
+    "assets/export.js": "3b2ce1e1cea93f3dd11241deb60c99bba4604d489c64831c5faa2c0a7fa3818b",
+    "assets/hk-technology/content-logos.png": "b93109ee0088041ae853a4e15dce5fd895d823f6134a725d7ce8213b2d821035",
+    "assets/hk-technology/cover-logos.png": "423908294090f452e6d7042c1a6b141b39667877766d8788f0b0b03c0555998e",
+    "assets/hk-technology/harbour.png": "24132dd419a524a992dd2676e1edfbc1d3c9c3678e94823789fed0eca1e01bb6",
+    "assets/i18n.js": "9547a538742954de230fc9ccfe89bf1e666c22c397f9903429f4e39c2019e636",
+    "assets/layouts.json": "d0ccfbef32ad1c9d233cb0781621fba345667c6f81f2adc78e5169efff8b9755",
+    "assets/model.js": "78f153103cc47d84eabacad0df4fc9819e6af09a45624f8997c64d202ebcf784",
+    "assets/qa.js": "f97d612d31fcb5fd653a39b27ab8ab8434a137919ccf2acd65822df515bf4447",
+    "assets/render.js": "40d60524da255aac529e535ed135f6056199e80b798f4014a03fbbed094404be",
+    "assets/report.css": "3d9b6463dd458686dbefdafd79b6ee3ac7a4c142c743099b3e92ed64aa068b25",
+    "assets/report.js": "4c0e4e08dfa2bfa44f0e30f94c0c36446215be589686f19b10b728254269ab98",
+    "assets/shell.html": "7cd54d6aab39253bfad7168e672e201348a87796c1a9b356a720a57e3e7a4c85",
+    "assets/style.css": "a79cc1aa8ae7223a0225f908d1b0c3abbbc5c2f217041769ec7a789482f66347",
+    "assets/theme.js": "09cfeb9cd4fcb0952ad779114eacb83aeefae5ff9d1b94c8f12bf3f0f9eb3a99",
+    "assets/themes/digital-violet.json": "5f1bd26108cf8a2b533f687aafa7c62b0e0a2c72c49d3d5fddc6bb8291d36ef6",
+    "assets/themes/hk-technology.json": "f15b006367eaebde91ef94c24e168b187ffcb2474e5b827beea890ac24725222",
+    "assets/themes/hsbc-dark.json": "2dbb43ba596c48f367ab63ccd694def4ab7f571d90c4bd5ddbffd04fb790e0cb",
+    "assets/themes/hsbc-executive.json": "d41363be74890424aa4fb2f8186084843904782ca95c63103f79b30391fb52ab",
+    "assets/themes/hsbc-light.json": "39ac833342067b3780e6109db2501e366e2ed104e6c41b147d54faca63ccb41b",
+    "assets/themes/tech-cyan.json": "ae1dfd25c89e7ad66ad2617d60786ff48a430ac316c53a7b3590fb0608a736e5",
+    "assets/themes/tech-light.json": "e39e63867e220df844cb6df7accb380428e42131ce742092c8e4fadfa08815d7",
+    "assets/ui-translations.js": "4045001a1e2cedbe2e0374534331be8e54bc80a9635da696b6eb37a551155b3b",
+    "assets/vendor/babel-polyfill-7.8.7-LICENSE": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76",
+    "assets/vendor/core-js-2.6.11-LICENSE": "722e1193901ad1ed4460753dded483d68ca2ad0528c67f86f76abc46b9aa25f5",
+    "assets/vendor/immediate-3.0.6-LICENSE.txt": "809e66de579fb7d92503848bbe6d1f348f4f6521a71e5d294fe7cc0c87a3b4ff",
+    "assets/vendor/jszip-3.10.1-LICENSE.markdown": "566c953c6090b1218ca6217dd7359d45dde46581968586dc607d59a78af6a9c4",
+    "assets/vendor/jszip-3.10.1-license_header.txt": "27873abeec2df3693480a8d1b8fe17dd61bee843d1b39c1c9cfab57ffe93099e",
+    "assets/vendor/lie-3.3.0-license.md": "5c81b0caa98593408b03125efa25efe622341ed87ae55561968828cd887d64a4",
+    "assets/vendor/manifest.json": "80376acd4c367efa840aef36750d34d85287407b295594599e73f55a6355b7bb",
+    "assets/vendor/pako-1.0.11-LICENSE": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
+    "assets/vendor/pako-zlib-LICENSE.txt": "61867d58d427c642fb42b8bf967ddb2eab7099a673c296a00c7ccf583fcf8b93",
+    "assets/vendor/pptxgenjs-4.0.1-LICENSE": "7a2bfe96150786ed1908b8e63f98ebab88875c1e79e28faff6649e0f11f77e52",
+    "assets/vendor/pptxgenjs-4.0.1.bundle.js": "7cfb2494dda144becbd86b31d8423f3c477afba472ca43fff184129745855062",
+    "assets/vendor/regenerator-runtime-0.13.3-LICENSE": "51887a3d47051ac2fce1210562e5b9fe0830a8a8fabeb272c2d586eeb18a05fd",
+    "assets/vendor/setimmediate-1.0.5-LICENSE.txt": "c4b4ad3a5746f1f5249a6dd90396ec519264e1bb02e01e48a6522c48a3a97cb4",
+    "references/upstream-LICENSE.txt": "62928eb197fe4662d1efc3af0735b3ba5df3c0308badd9a2baf2b619009f5366",
+    "scripts/build.py": "35b458142fa8fb90e5be3e5ba301674244221f92616f5cb9ff30dc232bcb8555",
+    "scripts/contracts.py": "77554199b58663221093e28019806a002ee79695a973030e3677a43512a87525",
+    "scripts/localization.py": "64b6f602bee6de72725743202be4a4102057d3fcf1b4820b4bf7fd35577aa9b6",
+    "scripts/raster.py": "c1e8a22721f4b66cc8302e40201b6f7b43146164d70ebd6a7d48b4ed28ec550f"
+  },
+  "not_verified": [
+    "file:// opening (browser policy rejected access; no bypass attempted)",
+    "actual browser Save HTML / Export PPTX download delivery",
+    "Office application rendering and New Slide UI",
+    "PDF print pagination",
+    "complete drag, resize, crop and multi-object editor combinations"
+  ],
+  "office": {
+    "method": "Unmodified corporate-web-slides export component in a local Node VM with native canvas image decoding; OOXML package inspection",
+    "files": [
+      {
+        "file": "08_management_brief_EN.pptx",
+        "sha256": "5b19f4796219b8cf4c302b81a135f092c8e6ba3ed5600e9fd9fdd8c97dafc771",
+        "slides": 17,
+        "notes": 17,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "en"
+      },
+      {
+        "file": "08_management_brief_SC.pptx",
+        "sha256": "3142e92e0f6c5d689793804c4d1ec4d4df347e6e41523942afbf867e98d46493",
+        "slides": 17,
+        "notes": 17,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "zh-Hans"
+      },
+      {
+        "file": "08_management_brief_TC.pptx",
+        "sha256": "fd6bd79b28b66a8471e48d57af149c6d6eb62121522d43a39672d8403bc51cac",
+        "slides": 17,
+        "notes": 17,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "zh-Hant"
+      },
+      {
+        "file": "08_management_brief_EN.potx",
+        "sha256": "99af6a90ec99aa2518381355e6773a8550d317a0c29067148154968b70d7ea5c",
+        "slides": 17,
+        "notes": 17,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "en"
+      },
+      {
+        "file": "qa-new-slide.pptx",
+        "sha256": "f5e1601ca4c2fc15c74fb83f09e2276a97bd4c5e70862f5fd8ad67b40c00e327",
+        "slides": 18,
+        "notes": 18,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "en"
+      }
+    ],
+    "new_slide_inherits_content_layout": true,
+    "office_ui_verified": false
+  },
+  "browser": {
+    "html_sha256": "ecd953bce8cafab8b654bdb6796a3bf1c9002f9df378ee2b4eea934d402a4e0c",
+    "method": "Chrome via CUA, loopback HTTP preview; DOM layout checks and visual inspection",
+    "languages": [
+      "en",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "views": [
+      "report",
+      "slides"
+    ],
+    "viewports": [
+      [
+        1280,
+        720
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1920,
+        1080
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "layout_combinations": 30,
+    "detected_text_overflow": 0,
+    "page_horizontal_overflow": 0,
+    "report_horizontal_overflow": 0,
+    "screenshots_loaded": 5,
+    "default_language_verified": "en",
+    "default_view_verified": "report",
+    "editor_checks": [
+      "English title, body and notes edits",
+      "Chinese content retained when switching; stale translation fields marked",
+      "Switching back retains English edits",
+      "Duplicate, undo, redo and delete page"
+    ],
+    "save_reopen": {
+      "status": "passed_with_test_transport",
+      "detail": "A QA copy used the native serializer with a local byte-capture transport; reopened over HTTP with the edited English title and original Chinese translations retained. Actual browser download delivery was not confirmed."
+    },
+    "native_browser_export": {
+      "status": "passed_with_test_transport",
+      "detail": "Native browser export uses the edited, saved and reopened English model; generated bytes captured through a QA transport. Actual download delivery remains unverified.",
+      "package": {
+        "file": "qa-browser-edited.pptx",
+        "sha256": "df2582fea80ee88313d97092ba5c57062fd94da7bbb7ec5765e31c6fa2335f9d",
+        "slides": 17,
+        "notes": 17,
+        "native_picture_objects": 5,
+        "native_shape_text_objects": 117,
+        "all_text_and_notes_match": true,
+        "original_screenshot_bytes_match": true,
+        "internal_relationships_resolve": true,
+        "named_content_layout_and_placeholders": true,
+        "language": "en"
+      }
+    },
+    "preview_sha256": "9616b19e3a0b07e13013107ed2fd46f6140a09fe709ebc2cae6f80f6062c2d48"
+  },
+  "migration": {
+    "prior_html_sha256": "ec496401d7a0649cad7ae0e432c39b9374358d313f4422aec6710492b638aab6",
+    "business_analysis_messages_preserved_per_language": 69,
+    "screenshot_bytes_preserved": 5,
+    "practitioner": "Leo Zhang"
+  },
+  "json_formatting_equivalence": {
+    "reason": "Pretty-print embedded JSON so the existing byte-exact logo allowlist applies without suppressing other JSON fields.",
+    "from_html_sha256": "ecd953bce8cafab8b654bdb6796a3bf1c9002f9df378ee2b4eea934d402a4e0c",
+    "to_html_sha256": "1f8bec2f96996b75dfcebf92699a6592e957e30a08160c03c19f2ed812637bdf",
+    "canonical_html_sha256": "1a8537a22d2570e9e1f5ea2d4ff22b050db84986c6415c02fa6eaf3456e2ad3f",
+    "decoded_json_equal": true,
+    "outside_json_bytes_equal": true,
+    "browser_rerun": false,
+    "browser_evidence_scope": "Original browser receipt and fingerprint retained. Only embedded JSON whitespace changed; decoded data, scripts, styles and all other HTML bytes were compared and are identical."
+  }
+}

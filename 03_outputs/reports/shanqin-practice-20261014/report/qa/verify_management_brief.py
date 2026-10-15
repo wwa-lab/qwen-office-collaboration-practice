@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""Validate brief content and native Office packages without launching Office."""
+import base64
+import hashlib
+import json
+from pathlib import Path
+import posixpath
+import re
+import xml.etree.ElementTree as ET
+import zipfile
+
+OUT=Path(__file__).resolve().parents[1]
+sha=lambda b:hashlib.sha256(b).hexdigest()
+html=(OUT/'08_management_brief.html').read_text()
+deck=json.loads(re.search(r'<script[^>]*id="deck-data"[^>]*>(.*?)</script>',html,re.S)[1])
+ns={'a':'http://schemas.openxmlformats.org/drawingml/2006/main','p':'http://schemas.openxmlformats.org/presentationml/2006/main'}
+compact=lambda s:re.sub(r'\s+','',s)
+key=lambda parts:json.dumps(parts,ensure_ascii=False,separators=(',',':'))
+images={sha(base64.b64decode(e['src'].split(',')[1])) for s in deck['slides'] for e in s['elements'] if e['type']=='image'}
+
+def check(path,lang,extra=False,title_override=None):
+ with zipfile.ZipFile(path) as z:
+  names=set(z.namelist());count=len(deck['slides'])+int(extra)
+  slide_names=sorted((n for n in names if re.fullmatch(r'ppt/slides/slide\d+\.xml',n)),key=lambda n:int(re.search(r'(\d+)\.xml',n)[1]))
+  note_names=[n for n in names if re.fullmatch(r'ppt/notesSlides/notesSlide\d+\.xml',n)]
+  assert len(slide_names)==len(note_names)==count
+  bundle=deck['i18n']['translations'][lang];pic_count=0;text_count=0
+  for i,s in enumerate(deck['slides'],1):
+   xml=ET.fromstring(z.read(f'ppt/slides/slide{i}.xml'));visible=compact(''.join(x.text or '' for x in xml.findall('.//a:t',ns)))
+   expected_title=title_override if i==1 and title_override else bundle[key(['slides',s['id'],'title'])]
+   assert compact(expected_title) in visible,(path.name,i,'title')
+   for e in s['elements']:
+    if 'text' in e:assert compact(bundle[key(['slides',s['id'],'elements',e['id'],'text'])]) in visible,(path.name,i,e['id'])
+   notes=ET.fromstring(z.read(f'ppt/notesSlides/notesSlide{i}.xml'));note_text=compact(''.join(x.text or '' for x in notes.findall('.//a:t',ns)))
+   assert compact(bundle[key(['slides',s['id'],'notes'])]) in note_text,(path.name,i,'notes')
+   pic_count+=len(xml.findall('.//p:pic',ns));text_count+=len(xml.findall('.//p:sp',ns))
+  assert pic_count==5 and text_count>50
+  media={sha(z.read(n)) for n in names if n.startswith('ppt/media/')}
+  assert images<=media,'Evidence picture bytes differ'
+  for name in names:
+   if not name.endswith('.rels'):continue
+   parent='' if name=='_rels/.rels' else posixpath.dirname(posixpath.dirname(name))
+   for rel in ET.fromstring(z.read(name)):
+    if rel.get('TargetMode')=='External':
+     assert 'image' not in rel.get('Type',''),'External image'
+     continue
+    target=rel.get('Target','');resolved=target.lstrip('/') if target.startswith('/') else posixpath.normpath(posixpath.join(parent,target))
+    assert resolved in names,(name,resolved)
+  layouts=[ET.fromstring(z.read(n)) for n in names if re.fullmatch(r'ppt/slideLayouts/slideLayout\d+\.xml',n)]
+  content=next(x for x in layouts if x.find('p:cSld',ns).get('name')=='HSBC_CONTENT')
+  assert content.findall('.//p:ph',ns) and content.findall('.//p:pic',ns),'Content layout lacks placeholders or theme imagery'
+  if extra:
+   rels=ET.fromstring(z.read(f'ppt/slides/_rels/slide{count}.xml.rels'));target=next(r.get('Target') for r in rels if r.get('Type','').endswith('/slideLayout'))
+   layout=ET.fromstring(z.read(posixpath.normpath(posixpath.join('ppt/slides',target))))
+   assert layout.find('p:cSld',ns).get('name')=='HSBC_CONTENT'
+  if path.suffix=='.potx':assert b'presentationml.template.main+xml' in z.read('[Content_Types].xml')
+  return {'file':path.name,'sha256':sha(path.read_bytes()),'slides':count,'notes':len(note_names),'native_picture_objects':pic_count,'native_shape_text_objects':text_count,'all_text_and_notes_match':True,'original_screenshot_bytes_match':True,'internal_relationships_resolve':True,'named_content_layout_and_placeholders':True,'language':lang}
+
+results=[check(OUT/f'08_management_brief_{suffix}.pptx',lang) for lang,suffix in [('en','EN'),('zh-Hans','SC'),('zh-Hant','TC')]]
+results.append(check(OUT/'08_management_brief_EN.potx','en'))
+extra=OUT/'.local-only/qa-new-slide.pptx'
+if extra.exists():results.append(check(extra,'en',extra=True))
+receipt_path=OUT/'qa/management_brief_checks.json';receipt=json.loads(receipt_path.read_text())
+assert receipt['html_sha256']==sha(html.encode())
+receipt['office']={'method':'Unmodified corporate-web-slides export component in a local Node VM with native canvas image decoding; OOXML package inspection','files':results,'new_slide_inherits_content_layout':extra.exists(),'office_ui_verified':False}
+browser_export=OUT/'.local-only/qa-browser-edited.pptx'
+if browser_export.exists() and 'browser' in receipt:
+ result=check(browser_export,'en',title_override='Management briefing QA')
+ receipt['browser']['native_browser_export']={'status':'passed_with_test_transport','detail':'Native browser export uses the edited, saved and reopened English model; generated bytes captured through a QA transport. Actual download delivery remains unverified.','package':result}
+ receipt['not_verified']=[item for item in receipt['not_verified'] if item != 'native export invoked from edited browser model did not complete']
+receipt_path.write_text(json.dumps(receipt,ensure_ascii=False,indent=2)+'\n')
+print(json.dumps({'native_exports_checked':len(results),'slides_and_notes':len(deck['slides']),'original_screenshots':len(images),'office_ui_verified':False}))

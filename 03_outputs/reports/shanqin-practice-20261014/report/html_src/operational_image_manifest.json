@@ -1,5 +1,47 @@
 [
   {
+    "id": "UI-06",
+    "file": "ui-06.jpg",
+    "crop": [
+      0,
+      0,
+      1512,
+      1081
+    ],
+    "title": "演示环境：业务驾驶舱概览",
+    "anchor": "body-02-2",
+    "caption": "图1 陕秦项目管家业务驾驶舱",
+    "source": "业务演示系统 /demo30/；2026年10月15日本轮只读补采。",
+    "observation": "可见合同总数4、合同总额1175万元、风险项目2、风险跟踪项0，以及合同和项目明细。",
+    "limit": "各数值仅代表10月15日演示租户的页面状态，不是业务收益或历史运行统计。“30天内临期”卡片显示4且下方合同均标为已逾期，其统计口径未核验，不直接解释为未来30天将到期。",
+    "evidence": "E01、E06、E20",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-06.jpg",
+    "sha256": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
+    "pixels": [
+      1512,
+      1081
+    ],
+    "mime": "image/jpeg",
+    "representation": "Direct browser screenshot bytes; viewport region for UI-04/UI-05 and full page for UI-06. No redraw, retouch, annotation, or compositing.",
+    "report_view": "assets/published/ui-06.jpg",
+    "source_file": "ui-06.jpg",
+    "source_sha256": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
+    "source_pixels": [
+      1512,
+      1081
+    ],
+    "source_crop": [
+      0,
+      0,
+      1512,
+      1081
+    ],
+    "capture_method": "browser_screenshot",
+    "section": "二 实践背景与范围"
+  },
+  {
     "id": "UI-01",
     "file": "ui-01.png",
     "crop": [
@@ -10,7 +52,7 @@
     ],
     "title": "合同录入结果：业务系统台账",
     "anchor": "body-03-1",
-    "caption": "图1 合同 HT-2026-0007 已出现在业务台账",
+    "caption": "图2 合同 HT-2026-0007 已出现在业务台账",
     "source": "业务演示系统 /demo30/contracts；2026年10月15日补采。",
     "observation": "可见合同编号、秦川城建集团、85万元、到期日2026-09-10及录入日期2026-10-10。",
     "limit": "这是补采时的台账状态。截图本身不展示写入过程；“本人全程观察AI录入、未点击补充协议”的说明仍依据本人更正U3。",
@@ -40,6 +82,48 @@
     ]
   },
   {
+    "id": "UI-04",
+    "file": "ui-04.jpg",
+    "crop": [
+      0,
+      0,
+      1512,
+      400
+    ],
+    "title": "项目台账：进度与预算风险",
+    "anchor": "body-04-1",
+    "caption": "图3 项目台账中的进度、预算与支出",
+    "source": "业务演示系统 /demo30/projects；2026年10月15日本轮只读补采。",
+    "observation": "可见地铁监测实际进度45%、计划60%，预算315万元、支出340万元；界面另显示榆商项目的进度差。",
+    "limit": "这是10月15日只读补采状态，不能替代10月10日接口返回。界面“滞后15%”按两项进度值应解读为相差15个百分点；风险标签由业务系统显示，不能全部归为模型独立识别。",
+    "evidence": "E06、E23",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-04.jpg",
+    "sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+    "pixels": [
+      1512,
+      400
+    ],
+    "mime": "image/jpeg",
+    "representation": "Direct browser screenshot bytes; viewport region for UI-04/UI-05 and full page for UI-06. No redraw, retouch, annotation, or compositing.",
+    "report_view": "assets/published/ui-04.jpg",
+    "source_file": "ui-04.jpg",
+    "source_sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+    "source_pixels": [
+      1512,
+      400
+    ],
+    "source_crop": [
+      0,
+      0,
+      1512,
+      400
+    ],
+    "capture_method": "browser_screenshot",
+    "section": "三 典型场景分析"
+  },
+  {
     "id": "UI-02",
     "file": "ui-02.png",
     "crop": [
@@ -49,8 +133,8 @@
       970
     ],
     "title": "群简报：信息已进入钉钉会话",
-    "anchor": "body-04-1",
-    "caption": "图2 钉钉保留的10月10日项目简报（节选）",
+    "anchor": "operation-photo-ui-04",
+    "caption": "图4 钉钉保留的10月10日项目简报（节选）",
     "source": "本机DingTalk，“陕秦·项目协同群”；2026年10月15日补采。",
     "observation": "可见“今日新增”“风险提醒”“已处理”等内容，补充协议在这条简报中仍标为“台账录入待确认”。",
     "limit": "这是当前客户端中的历史消息，不能单凭它确定最初版本或后续办结状态。群为单人演示；消息中的“自动提示”也不等于提醒送达已获验证。",
@@ -90,7 +174,7 @@
     ],
     "title": "钉钉待办：从消息形成跟进事项",
     "anchor": "body-05-1",
-    "caption": "图3 已创建的待拍板与纠偏方案跟踪待办",
+    "caption": "图5 已创建的待拍板与纠偏方案跟踪待办",
     "source": "本机DingTalk，To-Dos列表；2026年10月15日补采。",
     "observation": "可见两项实践待办、执行人和期限。界面显示待拍板为Sunday 9:00 AM，纠偏跟踪为Saturday 6:00 PM；两项仍提供“Complete”按钮。",
     "limit": "截图补强待办存在的证据，未证明提醒触达、负责人接单或业务办结。相对日期需结合采集日与原始记录解读，不视为新的执行效果测试。",
@@ -118,5 +202,47 @@
       2448,
       760
     ]
+  },
+  {
+    "id": "UI-05",
+    "file": "ui-05.jpg",
+    "crop": [
+      0,
+      0,
+      1512,
+      400
+    ],
+    "title": "风险跟踪：当前列表为空",
+    "anchor": "operation-photo-ui-03",
+    "caption": "图6 风险跟踪页面当前显示“暂无风险跟踪项”",
+    "source": "业务演示系统 /demo30/risks；2026年10月15日本轮只读补采。",
+    "observation": "“全部”筛选已选中，当前页面显示“暂无风险跟踪项”，未见RT-001。",
+    "limit": "这是10月15日的当前界面，不证明RT-001被删除，也不能解释10月10日两次读取差异的原因。与待办仍存在的截图并列，说明不同工作对象的状态需分别核对。",
+    "evidence": "E07、E09、E10",
+    "capture_date": "2026-10-15",
+    "timezone": "Asia/Shanghai",
+    "original": "assets/published/ui-05.jpg",
+    "sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+    "pixels": [
+      1512,
+      400
+    ],
+    "mime": "image/jpeg",
+    "representation": "Direct browser screenshot bytes; viewport region for UI-04/UI-05 and full page for UI-06. No redraw, retouch, annotation, or compositing.",
+    "report_view": "assets/published/ui-05.jpg",
+    "source_file": "ui-05.jpg",
+    "source_sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+    "source_pixels": [
+      1512,
+      400
+    ],
+    "source_crop": [
+      0,
+      0,
+      1512,
+      400
+    ],
+    "capture_method": "browser_screenshot",
+    "section": "三 典型场景分析"
   }
 ]

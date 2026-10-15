@@ -1,12 +1,19 @@
 {
   "report_source": "04_final_report.md",
-  "report_sha256": "72e5960c8203fa6a69f9a75c76e289f2ea612dad85aa186418cc4778b2823bde",
+  "report_sha256": "dc91f2706186f9b8d23cf85c4a2466a22655ec44906188defb5f3ac8b49e5580",
   "matrix_source": "02_evidence_matrix.md",
   "matrix_sha256": "40bf5436c409eb9c5636d5dce7ec5eb0f6b0445080f5142b0f3aa37d5a43b18a",
   "theme": "hk-technology",
   "default_view": "report",
-  "language": "zh-Hans",
-  "slides": 54,
+  "language": "en",
+  "languages": [
+    "en",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "translation_fields_per_language": 859,
+  "locales_sha256": "198822ca425f0043e2da5c4e5e2966cd60896644deafaae368fd8651fb48b1e1",
+  "slides": 74,
   "evidence_items": 24,
   "source_blocks": 69,
   "missing_content": [],
@@ -25,23 +32,23 @@
       "element": "body-01-1-item-0"
     },
     {
-      "line": 11,
-      "slide": "body-01-1",
-      "element": "body-01-1-item-1"
-    },
-    {
       "line": 7,
       "slide": "body-01-1"
     },
     {
-      "line": 13,
+      "line": 11,
       "slide": "body-01-2",
       "element": "body-01-2-item-0"
     },
     {
+      "line": 13,
+      "slide": "body-01-3",
+      "element": "body-01-3-item-0"
+    },
+    {
       "line": 15,
-      "slide": "body-01-2",
-      "element": "body-01-2-item-1"
+      "slide": "body-01-3",
+      "element": "body-01-3-item-1"
     },
     {
       "line": 19,
@@ -49,300 +56,343 @@
       "element": "body-02-1-item-0"
     },
     {
-      "line": 21,
-      "slide": "body-02-1",
-      "element": "body-02-1-item-1"
-    },
-    {
       "line": 17,
       "slide": "body-02-1"
     },
     {
-      "line": 23,
+      "line": 21,
       "slide": "body-02-2",
       "element": "body-02-2-item-0"
     },
     {
-      "line": 25,
-      "slide": "body-02-2",
-      "element": "body-02-2-item-1"
+      "line": 23,
+      "slide": "body-02-3",
+      "element": "body-02-3-item-0"
     },
     {
-      "line": 31,
+      "line": 25,
+      "slide": "body-02-4",
+      "element": "body-02-4-item-0"
+    },
+    {
+      "line": 43,
       "slide": "body-03-1",
       "element": "body-03-1-item-0"
     },
     {
-      "line": 33,
-      "slide": "body-03-1",
-      "element": "body-03-1-item-1"
-    },
-    {
-      "line": 35,
-      "slide": "body-03-1",
-      "element": "body-03-1-item-2"
-    },
-    {
-      "line": 29,
+      "line": 41,
       "slide": "body-03-1"
     },
     {
-      "line": 39,
+      "line": 45,
+      "slide": "body-03-2",
+      "element": "body-03-2-item-0"
+    },
+    {
+      "line": 47,
+      "slide": "body-03-2",
+      "element": "body-03-2-item-1"
+    },
+    {
+      "line": 63,
       "slide": "body-04-1",
       "element": "body-04-1-item-0"
     },
     {
-      "line": 41,
+      "line": 65,
       "slide": "body-04-1",
       "element": "body-04-1-item-1"
     },
     {
-      "line": 43,
-      "slide": "body-04-1",
-      "element": "body-04-1-item-2"
-    },
-    {
-      "line": 37,
+      "line": 61,
       "slide": "body-04-1"
     },
     {
-      "line": 47,
+      "line": 67,
+      "slide": "body-04-2",
+      "element": "body-04-2-item-0"
+    },
+    {
+      "line": 95,
       "slide": "body-05-1",
       "element": "body-05-1-item-0"
     },
     {
-      "line": 49,
+      "line": 97,
       "slide": "body-05-1",
       "element": "body-05-1-item-1"
     },
     {
-      "line": 51,
-      "slide": "body-05-1",
-      "element": "body-05-1-item-2"
-    },
-    {
-      "line": 45,
+      "line": 93,
       "slide": "body-05-1"
     },
     {
-      "line": 55,
+      "line": 99,
+      "slide": "body-05-2",
+      "element": "body-05-2-item-0"
+    },
+    {
+      "line": 127,
       "slide": "body-06-1",
       "element": "body-06-1-item-0"
     },
     {
-      "line": 57,
+      "line": 129,
       "slide": "body-06-1",
       "element": "body-06-1-item-1"
     },
     {
-      "line": 59,
-      "slide": "body-06-1",
-      "element": "body-06-1-item-2"
-    },
-    {
-      "line": 53,
+      "line": 125,
       "slide": "body-06-1"
     },
     {
-      "line": 65,
+      "line": 131,
+      "slide": "body-06-2",
+      "element": "body-06-2-item-0"
+    },
+    {
+      "line": 137,
       "slide": "body-07-1",
       "element": "body-07-1-item-0"
     },
     {
-      "line": 67,
+      "line": 139,
       "slide": "body-07-1",
       "element": "body-07-1-item-1"
     },
     {
-      "line": 63,
+      "line": 135,
       "slide": "body-07-1"
     },
     {
-      "line": 71,
+      "line": 143,
       "slide": "body-08-1",
       "element": "body-08-1-item-0"
     },
     {
-      "line": 73,
+      "line": 145,
       "slide": "body-08-1",
       "element": "body-08-1-item-1"
     },
     {
-      "line": 69,
+      "line": 141,
       "slide": "body-08-1"
     },
     {
-      "line": 77,
+      "line": 149,
       "slide": "body-09-1",
       "element": "body-09-1-item-0"
     },
     {
-      "line": 79,
+      "line": 151,
       "slide": "body-09-1",
       "element": "body-09-1-item-1"
     },
     {
-      "line": 75,
+      "line": 147,
       "slide": "body-09-1"
     },
     {
-      "line": 83,
+      "line": 155,
       "slide": "body-10-1",
       "element": "body-10-1-item-0"
     },
     {
-      "line": 81,
+      "line": 153,
       "slide": "body-10-1"
     },
     {
-      "line": 90,
+      "line": 155,
       "slide": "body-10-2",
       "element": "body-10-2-item-0"
     },
     {
-      "line": 94,
+      "line": 162,
+      "slide": "body-10-3",
+      "element": "body-10-3-item-0"
+    },
+    {
+      "line": 166,
       "slide": "body-11-1",
       "element": "body-11-1-item-0"
     },
     {
-      "line": 96,
-      "slide": "body-11-1",
-      "element": "body-11-1-item-1"
-    },
-    {
-      "line": 98,
-      "slide": "body-11-1",
-      "element": "body-11-1-item-2"
-    },
-    {
-      "line": 92,
+      "line": 164,
       "slide": "body-11-1"
     },
     {
-      "line": 104,
+      "line": 168,
+      "slide": "body-11-2",
+      "element": "body-11-2-item-0"
+    },
+    {
+      "line": 170,
+      "slide": "body-11-3",
+      "element": "body-11-3-item-0"
+    },
+    {
+      "line": 176,
       "slide": "body-12-1",
       "element": "body-12-1-item-0"
     },
     {
-      "line": 106,
+      "line": 178,
       "slide": "body-12-1",
       "element": "body-12-1-item-1"
     },
     {
-      "line": 102,
+      "line": 174,
       "slide": "body-12-1"
     },
     {
-      "line": 110,
+      "line": 182,
       "slide": "body-13-1",
       "element": "body-13-1-item-0"
     },
     {
-      "line": 112,
-      "slide": "body-13-1",
-      "element": "body-13-1-item-1"
-    },
-    {
-      "line": 114,
-      "slide": "body-13-1",
-      "element": "body-13-1-item-2"
-    },
-    {
-      "line": 108,
+      "line": 180,
       "slide": "body-13-1"
     },
     {
-      "line": 118,
+      "line": 184,
+      "slide": "body-13-2",
+      "element": "body-13-2-item-0"
+    },
+    {
+      "line": 186,
+      "slide": "body-13-2",
+      "element": "body-13-2-item-1"
+    },
+    {
+      "line": 190,
       "slide": "body-14-1",
       "element": "body-14-1-item-0"
     },
     {
-      "line": 120,
+      "line": 192,
       "slide": "body-14-1",
       "element": "body-14-1-item-1"
     },
     {
-      "line": 116,
+      "line": 188,
       "slide": "body-14-1"
     },
     {
-      "line": 126,
+      "line": 198,
       "slide": "body-15-1",
       "element": "body-15-1-item-0"
     },
     {
-      "line": 124,
+      "line": 196,
       "slide": "body-15-1"
     },
     {
-      "line": 126,
+      "line": 198,
       "slide": "body-15-2",
       "element": "body-15-2-item-0"
     },
     {
-      "line": 139,
+      "line": 198,
+      "slide": "body-15-3",
+      "element": "body-15-3-item-0"
+    },
+    {
+      "line": 198,
+      "slide": "body-15-4",
+      "element": "body-15-4-item-0"
+    },
+    {
+      "line": 198,
+      "slide": "body-15-5",
+      "element": "body-15-5-item-0"
+    },
+    {
+      "line": 211,
       "slide": "body-16-1",
       "element": "body-16-1-item-0"
     },
     {
-      "line": 139,
+      "line": 211,
       "slide": "body-16-1",
       "element": "body-16-1-item-1"
     },
     {
-      "line": 139,
+      "line": 211,
       "slide": "body-16-1",
       "element": "body-16-1-item-2"
     },
     {
-      "line": 139,
+      "line": 211,
       "slide": "body-16-1",
       "element": "body-16-1-item-3"
     },
     {
-      "line": 139,
-      "slide": "body-16-1",
-      "element": "body-16-1-item-4"
-    },
-    {
-      "line": 137,
+      "line": 209,
       "slide": "body-16-1"
     },
     {
-      "line": 147,
+      "line": 211,
+      "slide": "body-16-2",
+      "element": "body-16-2-item-0"
+    },
+    {
+      "line": 219,
       "slide": "body-17-1",
       "element": "body-17-1-item-0"
     },
     {
-      "line": 145,
+      "line": 217,
       "slide": "body-17-1"
     },
     {
-      "line": 155,
+      "line": 219,
       "slide": "body-17-2",
       "element": "body-17-2-item-0"
     },
     {
-      "line": 159,
+      "line": 219,
+      "slide": "body-17-3",
+      "element": "body-17-3-item-0"
+    },
+    {
+      "line": 227,
+      "slide": "body-17-4",
+      "element": "body-17-4-item-0"
+    },
+    {
+      "line": 231,
       "slide": "sources-1",
       "element": "sources-1-item-0"
     },
     {
-      "line": 161,
-      "slide": "sources-1",
-      "element": "sources-1-item-1"
-    },
-    {
-      "line": 157,
+      "line": 229,
       "slide": "sources-1"
     },
     {
-      "line": 163,
+      "line": 233,
       "slide": "sources-2",
       "element": "sources-2-item-0"
+    },
+    {
+      "line": 235,
+      "slide": "sources-2",
+      "element": "sources-2-item-1"
     }
   ],
   "published_images": [
+    {
+      "id": "UI-06",
+      "sha256": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
+      "original": "assets/published/ui-06.jpg",
+      "source_sha256": "a5d9eb511848fcc94ce24ab47c51e360620cd5ffc7f753d51bbd867f472ddd60",
+      "source_crop": [
+        0,
+        0,
+        1512,
+        1081
+      ],
+      "capture_date": "2026-10-15"
+    },
     {
       "id": "UI-01",
       "sha256": "638698ce70f57e95d7b56baddab60aa4a0b2ce462955e124878dd4e91af37dc2",
@@ -353,6 +403,19 @@
         0,
         1512,
         480
+      ],
+      "capture_date": "2026-10-15"
+    },
+    {
+      "id": "UI-04",
+      "sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+      "original": "assets/published/ui-04.jpg",
+      "source_sha256": "4d92ad62874d856d60802a3917e551c71c431e189abc836a36c2df785bf975a2",
+      "source_crop": [
+        0,
+        0,
+        1512,
+        400
       ],
       "capture_date": "2026-10-15"
     },
@@ -381,8 +444,21 @@
         760
       ],
       "capture_date": "2026-10-15"
+    },
+    {
+      "id": "UI-05",
+      "sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+      "original": "assets/published/ui-05.jpg",
+      "source_sha256": "63e41ae7519955742e08c7ea6a236eaaad338b629170e4952b6cc32f3d819970",
+      "source_crop": [
+        0,
+        0,
+        1512,
+        400
+      ],
+      "capture_date": "2026-10-15"
     }
   ],
   "skill_version": "1.3.0",
-  "html_sha256": "a3f692c96dc7c934e030ff9caba1d0846cf056e92e7c98c7dbef71ea4bd16225"
+  "html_sha256": "26dd4699f8babc6694477ab12b495790cca1d05dcc691f495d88393307b78510"
 }

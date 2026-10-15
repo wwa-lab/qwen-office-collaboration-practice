@@ -1,66 +1,97 @@
 # Shanqin Collaboration Practice
 
-千问办公与钉钉协同实践的报告、证据及必要素材归档。实践日期为 2026-10-10，报告日期为 2026-10-14，实际界面截图补采于 2026-10-15。
+**English** · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
 
-**建议先读 [正式报告](report/04_final_report.md)，或下载 [离线 HTML 报告](report/04_final_report.html) 后在浏览器打开。** HTML 使用 HK Technology 主题，默认 Report 连续阅读模式，图片、样式和脚本全部内嵌，支持浏览器打印。GitHub 文件页显示源码，需下载原文件阅读。
+Reports, evidence and essential materials from the Qwen Office and DingTalk collaboration demonstration. Practice date: 10 October 2026. Report date: 14 October 2026. Additional real interface captures: 15 October 2026. Practitioner: **Leo Zhang**.
 
-这是个人实践分析及管理讨论材料，采用模拟业务数据；不代表所在机构的官方评估、部署决定或产品背书。HK Technology 是本次选用的视觉主题。
+**Start with the [full English report](report/04_final_report_EN.md) or the [offline HTML report](report/04_final_report.html).** The HTML uses the HK Technology theme and opens in English in continuous Report view. The Language selector switches to Simplified or Traditional Chinese. Images, styles and scripts are embedded, and browser printing is supported. GitHub displays HTML source; download the raw file and open it in a browser.
 
-## 阅读入口
+This is personal practice analysis for management discussion, using synthetic business data. It is not an official institutional assessment, deployment decision or product endorsement. HK Technology is the visual theme selected for this material.
 
-| 文件 | 用途 |
+## Reading guide
+
+English Markdown editions are linked first. Chinese originals remain unchanged for source comparison. The two HTML reports support English, Simplified Chinese and Traditional Chinese.
+
+| Document | English / Chinese original | Purpose |
+| --- | --- | --- |
+| Full report | [English](report/04_final_report_EN.md) / [简体中文](report/04_final_report.md) | Corrected management assessment and scenario analysis, with all six real screenshots. |
+| Material inventory | [English](report/01_material_inventory_EN.md) / [简体中文](report/01_material_inventory.md) | Actual review scope, source categories and materials not obtained. |
+| Evidence matrix | [English](report/02_evidence_matrix_EN.md) / [简体中文](report/02_evidence_matrix.md) | E01–E24: separates facts, observations, analysis and hypotheses. |
+| Independent management analysis | [English](report/03_management_analysis_EN.md) / [简体中文](report/03_management_analysis.md) | Workflow changes, incremental value and evaluation methods. |
+| Open questions | [English](report/05_open_questions_EN.md) / [简体中文](report/05_open_questions.md) | Missing evidence and matters requiring human judgment. |
+| HTML use and maintenance | [English](report/06_html_readme_EN.md) / [简体中文](report/06_html_readme.md) | Offline reading, printing, build dependencies and verification boundaries. |
+| Screenshot guide | [English](report/07_operational_screenshot_evidence_EN.md) / [简体中文](report/07_operational_screenshot_evidence.md) | Sources, capture dates, cropping and evidential limits. |
+| Record index | [English](report/evidence/record_index_EN.md) / [简体中文](report/evidence/record_index.md) | Locations in historical sessions and available factual extracts. |
+| File catalog | [English](report/evidence/file_catalog_EN.md) / [简体中文](report/evidence/file_catalog.md) | The 98 file objects originally reviewed and their public availability; not 98 independent pieces of evidence. |
+| Essential source materials | [English guide](source_materials/README.md) / [简体中文说明](source_materials/README.zh-Hans.md) | English translations and unchanged originals of the same-day recap and simulated agreement. |
+
+| Presentation / evidence | Purpose |
 | --- | --- |
-| [正式报告 Markdown](report/04_final_report.md) / [HTML](report/04_final_report.html) | 最新更正后的管理判断与场景分析；HTML 另含三张真实操作界面节选 |
-| [素材清单](report/01_material_inventory.md) | 实际检查范围、来源等级和未取得材料 |
-| [证据矩阵](report/02_evidence_matrix.md) | E01–E24，区分事实、观察、推论与待验证假设 |
-| [独立管理分析](report/03_management_analysis.md) | 流程变化、增量价值与评估方法 |
-| [待确认事项](report/05_open_questions.md) | 尚需补证和人工判断的事项 |
-| [HTML 使用与维护](report/06_html_readme.md) | 离线阅读、打印、构建依赖与验收边界 |
-| [操作截图说明](report/07_operational_screenshot_evidence.md) | 合同台账、群简报、待办的来源、时间、裁剪及证明边界 |
-| [记录索引](report/evidence/record_index.md) / [事实摘录](report/evidence/selected_factual_extracts.json) | 历史会话的定位及必要业务返回字段 |
-| [逐文件目录](report/evidence/file_catalog.md) / [来源指纹](report/evidence/source_manifest.json) | 原审阅的 98 个文件对象及其公开可用性；不是 98 份独立证据 |
-| [归档检查](report/qa/archive_checks.json) | 当前 HTML 指纹、内容覆盖、图片、链接和脚本检查 |
+| [Management brief HTML](report/08_management_brief.html) | Native corporate-web-slides Report: three-system workflow, business value to test, candidate uses for technology teams and next steps. English by default; both Chinese variants, Slides and browser editing supported. Five real screenshots; practitioner Leo Zhang. |
+| [Brief: English PPTX](report/08_management_brief_EN.pptx) / [简体 PPTX](report/08_management_brief_SC.pptx) / [繁體 PPTX](report/08_management_brief_TC.pptx) / [English POTX](report/08_management_brief_EN.potx) | 17 editable slides with speaker notes. Structure, images and master inheritance checked; rendering in PowerPoint unverified. |
+| [Full report HTML](report/04_final_report.html) | Complete trilingual report, six screenshots and E01–E24. |
+| [Full report: English PPTX](report/04_final_report_EN.pptx) / [简体 PPTX](report/04_final_report_SC.pptx) / [繁體 PPTX](report/04_final_report_TC.pptx) / [English POTX](report/04_final_report_EN.potx) | 74 slides with native text, tables, separate images and speaker notes. Rendering in PowerPoint unverified. |
+| [Factual extracts](report/evidence/selected_factual_extracts.json) / [Source fingerprints](report/evidence/source_manifest.json) | Essential returned business fields and original file fingerprints. |
+| [Archive checks](report/qa/archive_checks.json) | Current HTML fingerprint, content coverage, image, link and script checks. |
 
-## 版本与事实口径
+## Versions and factual boundaries
 
-最新分析以 `report/04_final_report.md` 和 `report/02_evidence_matrix.md` 为准。U3 更正保持不变：本人全程观察千问办公，由 AI 完成合同录入，未点击补充协议；已核读日志仍缺少具体写入调用和确认上下文。单人演示不等于多人协作闭环，工具动作成功不等于效率收益或持续可靠性已验证。
+The current analysis is defined by `report/04_final_report.md` and `report/02_evidence_matrix.md`. The English full report uses the same reviewed translations as the HTML. English editions are translations, not additional independent evidence.
 
-本目录原有的三份千问整理稿保留原文，属于**待核验的历史底稿**，其中“完整闭环”“边界问题修复”“确认门已验证”等强表述已在正式报告中降级或纠正：
+Correction U3 remains unchanged: Leo observed the AI complete contract entry throughout in Qwen Office and did not click the supplementary agreement. The reviewed logs still lack the specific write call and confirmation context. A single-person demonstration does not establish a completed multi-person workflow; successful tool calls do not establish efficiency gains or sustained reliability.
 
-- [原报告初稿](千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md)
-- [原实践素材与事实清单](实践素材与事实清单-2026-10-14.md)
-- [原核心发现与管理启示](核心发现与管理启示-2026-10-14.md)
-- [必要源材料说明](source_materials/README.md)：当日 AI 复盘及模拟补充协议。
+The three original Qwen drafts are retained as **historical drafts requiring verification**. Their English editions preserve their historical claims, which must be read alongside the corrected report. Strong claims of a complete workflow, a fixed boundary issue or a verified confirmation gate have been qualified or corrected in the formal report.
 
-旧 PDF、Word 尚未加入三张操作截图，现移至本地 `report/.local-only/prior-exports/`，不随公开仓库发布。旧浏览器及打印验收也只适用于当时版本。当前 HTML 完成静态构建和完整性检查，尚未重做浏览器视觉、交互和打印验收。
+| Historical draft | English translation | Chinese original |
+| --- | --- | --- |
+| Original report draft | [English](original_report_draft_EN.md) | [简体中文](千问办公与钉钉协同实践-基于陕秦项目的场景观察与应用建议-初稿-2026-10-14.md) |
+| Practice materials and factual inventory | [English](practice_materials_and_facts_EN.md) | [简体中文](实践素材与事实清单-2026-10-14.md) |
+| Key findings and management implications | [English](original_key_findings_EN.md) | [简体中文](核心发现与管理启示-2026-10-14.md) |
 
-## 归档范围
+The old PDF and Word exports predate the six operational screenshots and are retained only in `report/.local-only/prior-exports/`. Earlier browser and print checks apply only to their earlier versions. The current full report has been checked in three languages, two views and five viewport sizes. A test copy passed editing, serialization and reopening checks; native export content and screenshots were also checked. Actual browser download delivery, rendering in PowerPoint and printed pagination remain unverified.
+
+## Archive scope
 
 ```text
 shanqin-practice-20261014/
-├── README.md / .gitignore / publication_files.json
-├── 三份原始千问整理稿.md
-├── source_materials/             # M4 当日复盘、M5 模拟协议
+├── README.md / README.zh-Hans.md / README.zh-Hant.md
+├── .gitignore / publication_files.json
+├── Three original Qwen drafts and their English translations
+├── source_materials/             # M4 recap; M5 simulated agreement; translations
 └── report/
-    ├── 01…07 文档及最新 HTML
-    ├── assets/published/         # 3 张原像素截图节选
-    ├── evidence/                 # 来源指纹、索引、事实摘录
-    ├── html_src/                 # 任务内构建代码及内容映射
-    └── qa/                      # 当前静态检查脚本及记录
+    ├── 01…08 documents, full report and management brief
+    ├── *_EN.md                  # English editions of the Markdown documents
+    ├── assets/published/        # 6 real interface screenshots and excerpts
+    ├── evidence/                # Source fingerprints, index and factual extracts
+    ├── html_src/                # Task-local builders and content mappings
+    └── qa/                     # Verification scripts and receipts
 ```
 
-`publication_files.json` 是公开文件清单。原始 JSONL、含演示账号和个人标识的技能包、完整窗口截图、准备材料截图、字体副本、重复预览与旧导出不随公开归档。完整原图留在本地；公开 PNG 仅保留报告所需矩形，HTML 也只嵌入这些节选。截图仍含与场景有关的显示名和演示业务数据，不声称完全匿名化。
+`publication_files.json` lists the public files. Raw JSONL records, skill packages containing demo accounts and personal identifiers, full-window captures, preparation screenshots, font copies, duplicate previews and old exports are excluded. Full originals remain local. Published PNGs retain the rectangular excerpts needed for the report; the additional JPEGs show the business webpage region or full business page. The HTML embeds only published images. Screenshots retain scenario-relevant display names and demo data and are not claimed to be fully anonymized.
 
-原始文件的哈希和历史记录行号保留。未公开来源在清单中标为本地留存，公众无法仅凭这些定位独立重现全部审阅。公开的事实摘录也不是服务端审计日志。
+Original file hashes and historical record line numbers are retained. Unpublished sources are marked as locally retained; those references alone do not let public readers independently reproduce the whole review. The published factual extracts are not server audit logs.
 
-相关公众号文章与分享演示仍放在个人知识库原有 `03_outputs/articles/` 和 `03_outputs/presentations/` 分类中；它们是衍生产物，未复制到本仓库作为新增证据。本地旧入口 `report_output/` 已迁至本目录的 `report/`，历史日志中的旧路径按此对应。
+Related WeChat articles and sharing presentations remain in the personal knowledge base under `03_outputs/articles/` and `03_outputs/presentations/`. They are derived materials and have not been copied here as additional evidence. The former local `report_output/` directory moved to this archive's `report/`; interpret old paths in historical logs accordingly.
 
-## 维护
+## Maintenance
 
-先更新 Markdown / 证据 / 图片来源清单，再按 [构建说明](report/06_html_readme.md) 生成 HTML。原始底稿不回写；新证据应注明采集时间、来源和适用范围。变更公开文件范围时同步更新 `publication_files.json`，并执行：
+Update the Markdown, evidence and image source manifest first, then generate the HTML using the [build instructions](report/06_html_readme_EN.md). Preserve historical originals. Record the capture date, source and scope of new evidence. Update `publication_files.json` when the public file set changes.
+
+Maintain all three README editions together. Review English translations when their Chinese sources change. Translation source fingerprints are recorded in `report/html_src/markdown_translations.json`. The English full-report builder reuses `report/html_src/report_locales.json` and stops if a translation is missing; it requires only Python 3 and does not rebuild the HTML. Run from this archive directory:
 
 ```sh
+python3 report/html_src/build_english_report.py
 python3 report/qa/verify_archive.py
 ```
 
-该命令只做静态核对，不访问业务系统或钉钉；需要 Python 3 和 Node.js。公开仓库为 [wwa-lab/qwen-office-collaboration-practice](https://github.com/wwa-lab/qwen-office-collaboration-practice)。
+The management brief is a derived reading entry point, not additional independent evidence. Its single content source is `report/html_src/management_brief_model.json`; the three languages share layout and screenshots. `build_management_brief.py` calls the native corporate-web-slides 1.3.0 Report builder without modifying the shared skill or browser runtime. Reading needs no dependencies; rebuilding requires Python 3, Node.js and the installed skill:
+
+```sh
+python3 report/html_src/build_management_brief.py
+python3 report/qa/verify_management_brief.py
+python3 report/qa/verify_archive.py
+```
+
+After changing the model, rebuild the HTML, export each language using Export PPTX / Export POTX in the webpage, then run the verification scripts. The Office verifier checks existing files; it does not generate them. Rebuilding resets browser and Office verification records, so old passing results cannot be reused automatically. See [HTML use and maintenance](report/06_html_readme_EN.md) and the [management brief checks](report/qa/management_brief_checks.json).
+
+The archive verification command performs static checks only, without accessing the business system or DingTalk. It requires Python 3 and Node.js. Public repository: [wwa-lab/qwen-office-collaboration-practice](https://github.com/wwa-lab/qwen-office-collaboration-practice).

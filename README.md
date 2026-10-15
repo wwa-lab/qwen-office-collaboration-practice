@@ -1,15 +1,18 @@
 # Qwen Office Collaboration Practice
 
-千问办公与钉钉协同实践研究，基于 2026 年 10 月的陕秦模拟项目演示。归档报告、证据矩阵、实际界面节选和必要源材料，帮助区分功能演示、场景可行性与尚待验证的管理价值。
+**English** · [简体中文](README.zh-Hans.md) · [繁體中文](README.zh-Hant.md)
 
-- [阅读正式报告](03_outputs/reports/shanqin-practice-20261014/report/04_final_report.md)
-- [项目目录与证据入口](03_outputs/reports/shanqin-practice-20261014/README.md)
-- [下载离线 HTML](https://raw.githubusercontent.com/wwa-lab/qwen-office-collaboration-practice/main/03_outputs/reports/shanqin-practice-20261014/report/04_final_report.html)：保存为 `.html` 后用浏览器打开，默认 Report 模式，HK Technology 主题，支持打印；无需网络、登录或安装运行环境。
-- [操作截图及说明](03_outputs/reports/shanqin-practice-20261014/report/07_operational_screenshot_evidence.md)
-- [待确认事项](03_outputs/reports/shanqin-practice-20261014/report/05_open_questions.md)
+A case study of Qwen Office, a business system and DingTalk working together in the Shanqin demonstration project in October 2026. The repository brings together the report, evidence matrix, real interface screenshots and essential source materials. It distinguishes demonstrated functions from potential business value that still needs testing.
 
-**当前版本：2026-10-15 归档版。** 保留 U3 更正：由 AI 录入合同，本人全程观察，未点击补充协议；具体调用上下文仍待补齐。公开的三张配图是 10 月 15 日补采的真实界面节选，不能替代 10 月 10 日原始写入过程。
+- [Management brief](03_outputs/reports/shanqin-practice-20261014/report/08_management_brief.html): collaboration scenarios, potential business value and lessons for technology teams, presented in corporate-web-slides Report mode. English by default, with Simplified and Traditional Chinese, a Slides view and five real screenshots. Practitioner: Leo Zhang.
+- [Full English report](03_outputs/reports/shanqin-practice-20261014/report/04_final_report_EN.md) / [简体中文原文](03_outputs/reports/shanqin-practice-20261014/report/04_final_report.md) / [Trilingual HTML](03_outputs/reports/shanqin-practice-20261014/report/04_final_report.html): the complete analysis, with six real screenshots and evidence references E01–E24.
+- [Project guide and document index](03_outputs/reports/shanqin-practice-20261014/README.md): English versions of the Markdown documents, Chinese originals, editable presentations and evidence.
+- [Download the offline HTML report](https://raw.githubusercontent.com/wwa-lab/qwen-office-collaboration-practice/main/03_outputs/reports/shanqin-practice-20261014/report/04_final_report.html): save as `.html` and open in a browser. It uses the HK Technology theme and Report view by default, with print support. Reading requires no network connection, login or runtime installation. GitHub displays HTML source; download the raw file to read the rendered report.
+- [Screenshot provenance and limitations](03_outputs/reports/shanqin-practice-20261014/report/07_operational_screenshot_evidence_EN.md)
+- [Open questions](03_outputs/reports/shanqin-practice-20261014/report/05_open_questions_EN.md)
 
-正式报告及证据矩阵是当前判断；历史千问底稿保留原文，不能直接采用其中较强的成功或闭环结论。本次为单人、模拟数据演示，没有实测效率收益或规模化推广结论。材料是个人实践研究，不代表所在机构的官方评价或产品背书。
+**Current edition: 15 October 2026.** Correction U3 is retained: Leo Zhang observed the AI enter the contract throughout in Qwen Office and did not click the supplementary agreement. The specific write call and confirmation context still need to be located. The six published images are real interface captures collected on 15 October; they do not show the original write operation on 10 October.
 
-HTML 已完成静态完整性检查，尚未重做本版浏览器视觉、交互及打印验收。完整窗口截图、原始会话日志、账号技能包、旧 PDF/Word 和生成缓存未上传。阅读 HTML 无需构建依赖；重建需要单独安装的内部 `corporate-web-slides` Skill，具体见项目使用说明。
+The corrected report and evidence matrix contain the current assessment. Historical Qwen drafts are preserved unchanged; their stronger claims of success or a completed workflow should not be adopted without verification. This was a single-person demonstration using synthetic data, with no measured efficiency gains or evidence for wider deployment. It is a personal practice study, not an official institutional assessment or product endorsement.
+
+Both HTML reports have been checked across three languages, two views and five viewport sizes. Editing, serialization and reopening were checked on test copies, alongside the structure of the native Office files. Actual browser download delivery, rendering in PowerPoint and printed pagination remain unverified. Full-window screenshots, raw session logs, account-specific skill packages, old PDF/Word exports and build caches are excluded. Reading the HTML needs no build dependencies; rebuilding requires the separately installed internal `corporate-web-slides` skill, as explained in the project guide.
